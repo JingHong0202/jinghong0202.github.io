@@ -5,9 +5,9 @@
   <subtitle>Jing Hong</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://jinghong0202.github.io/"/>
+  <link href="jinghong.ml/"/>
   <updated>2020-02-24T11:17:28.528Z</updated>
-  <id>https://jinghong0202.github.io/</id>
+  <id>jinghong.ml/</id>
   
   <author>
     <name>Jing Hong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://jinghong0202.github.io/2020/02/24/hello-world/"/>
-    <id>https://jinghong0202.github.io/2020/02/24/hello-world/</id>
+    <link href="jinghong.ml/2020/02/24/hello-world/"/>
+    <id>jinghong.ml/2020/02/24/hello-world/</id>
     <published>2020-02-24T11:17:28.527Z</published>
     <updated>2020-02-24T11:17:28.528Z</updated>
     
