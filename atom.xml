@@ -5,9 +5,9 @@
   <subtitle>Jing Hong</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="jinghong.ml/"/>
-  <updated>2020-02-26T07:38:32.919Z</updated>
-  <id>jinghong.ml/</id>
+  <link href="https://jinghong.ml/"/>
+  <updated>2020-02-26T16:04:48.421Z</updated>
+  <id>https://jinghong.ml/</id>
   
   <author>
     <name>Jing Hong</name>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="jinghong.ml/posts/3eeb.html"/>
-    <id>jinghong.ml/posts/3eeb.html</id>
-    <published>2020-02-24T11:17:28.527Z</published>
-    <updated>2020-02-26T07:38:32.919Z</updated>
+    <title>ES6</title>
+    <link href="https://jinghong.ml/posts/33ad.html"/>
+    <id>https://jinghong.ml/posts/33ad.html</id>
+    <published>2020-02-26T15:36:52.530Z</published>
+    <updated>2020-02-26T16:04:48.421Z</updated>
     
     <summary type="html">
     
@@ -29,13 +29,160 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h1 id=&quot;ES6&quot;&gt;&lt;a href=&quot;#ES6&quot; class=&quot;headerlink&quot; title=&quot;ES6&quot;&gt;&lt;/a&gt;&lt;strong&gt;ES6&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;变量声明扩展&quot;&gt;&lt;a href=&quot;#变量声明扩展&quot;
         
       
     
     </summary>
     
     
+      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+    
+    
+      <category term="ES6" scheme="https://jinghong.ml/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5新特性</title>
+    <link href="https://jinghong.ml/posts/17f6.html"/>
+    <id>https://jinghong.ml/posts/17f6.html</id>
+    <published>2020-02-26T15:34:54.278Z</published>
+    <updated>2020-02-26T16:00:35.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、H5拖拽&quot;&gt;&lt;a href=&quot;#一、H5拖拽&quot; class=&quot;headerlink&quot; title=&quot;一、H5拖拽&quot;&gt;&lt;/a&gt;一、H5拖拽&lt;/h2&gt;&lt;p&gt;JS里拖拽三事件， onmousedown onmousemove onmouseup
+        
+      
+    
+    </summary>
+    
+    
+      <category term="HTML5" scheme="https://jinghong.ml/categories/HTML5/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="H5" scheme="https://jinghong.ml/tags/H5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Canvas</title>
+    <link href="https://jinghong.ml/posts/7c26.html"/>
+    <id>https://jinghong.ml/posts/7c26.html</id>
+    <published>2019-09-16T16:00:00.000Z</published>
+    <updated>2020-02-26T16:01:54.303Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Canvas&quot;&gt;&lt;a href=&quot;#Canvas&quot; class=&quot;headerlink&quot; title=&quot;Canvas&quot;&gt;&lt;/a&gt;Canvas&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;canvas
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+    
+    
+      <category term="Canvas" scheme="https://jinghong.ml/tags/Canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS中Buffer数据详解</title>
+    <link href="https://jinghong.ml/posts/bd7.html"/>
+    <id>https://jinghong.ml/posts/bd7.html</id>
+    <published>2019-09-15T16:00:00.000Z</published>
+    <updated>2020-02-26T16:06:19.869Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+    
+    
+      <category term="Buffer" scheme="https://jinghong.ml/tags/Buffer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebAudio API</title>
+    <link href="https://jinghong.ml/posts/3a3a.html"/>
+    <id>https://jinghong.ml/posts/3a3a.html</id>
+    <published>2019-09-15T16:00:00.000Z</published>
+    <updated>2020-02-26T16:30:37.429Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;webAudio-API&quot;&gt;&lt;a href=&quot;#webAudio-API&quot; class=&quot;headerlink&quot; title=&quot;webAudio  API&quot;&gt;&lt;/a&gt;webAudio  API&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;webAudio
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+    
+    
+      <category term="音乐可视化" scheme="https://jinghong.ml/tags/%E9%9F%B3%E4%B9%90%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+      <category term="webAudio API" scheme="https://jinghong.ml/tags/webAudio-API/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax</title>
+    <link href="https://jinghong.ml/posts/921d.html"/>
+    <id>https://jinghong.ml/posts/921d.html</id>
+    <published>2019-08-26T16:00:00.000Z</published>
+    <updated>2020-02-26T16:17:32.125Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;什么是Ajax？&quot;&gt;&lt;a href=&quot;#什么是Ajax？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+    
+    
+      <category term="Ajax" scheme="https://jinghong.ml/tags/Ajax/"/>
+    
+      <category term="CORS" scheme="https://jinghong.ml/tags/CORS/"/>
     
   </entry>
   
