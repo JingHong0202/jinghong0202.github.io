@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jinghong.ml/"/>
-  <updated>2020-02-26T16:04:48.421Z</updated>
+  <updated>2020-02-27T08:53:35.013Z</updated>
   <id>https://jinghong.ml/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Chrome Devtools</title>
+    <link href="https://jinghong.ml/posts/c9c3.html"/>
+    <id>https://jinghong.ml/posts/c9c3.html</id>
+    <published>2020-02-27T08:42:55.865Z</published>
+    <updated>2020-02-27T08:53:35.013Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Chrome-Devtools-使用技巧&quot;&gt;&lt;a href=&quot;#Chrome-Devtools-使用技巧&quot; class=&quot;headerlink&quot; title=&quot;Chrome Devtools 使用技巧&quot;&gt;&lt;/a&gt;Chrome Devtools
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="Chrome Devtools" scheme="https://jinghong.ml/tags/Chrome-Devtools/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ES6</title>
     <link href="https://jinghong.ml/posts/33ad.html"/>
     <id>https://jinghong.ml/posts/33ad.html</id>
     <published>2020-02-26T15:36:52.530Z</published>
-    <updated>2020-02-26T16:04:48.421Z</updated>
+    <updated>2020-02-27T06:21:25.925Z</updated>
     
     <summary type="html">
     
@@ -36,8 +63,10 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
     
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
     
       <category term="ES6" scheme="https://jinghong.ml/tags/ES6/"/>
     
@@ -48,7 +77,7 @@
     <link href="https://jinghong.ml/posts/17f6.html"/>
     <id>https://jinghong.ml/posts/17f6.html</id>
     <published>2020-02-26T15:34:54.278Z</published>
-    <updated>2020-02-26T16:00:35.673Z</updated>
+    <updated>2020-02-27T06:22:06.883Z</updated>
     
     <summary type="html">
     
@@ -63,7 +92,7 @@
     </summary>
     
     
-      <category term="HTML5" scheme="https://jinghong.ml/categories/HTML5/"/>
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
     
     
       <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
@@ -73,11 +102,142 @@
   </entry>
   
   <entry>
+    <title>LocalStorage</title>
+    <link href="https://jinghong.ml/posts/de13.html"/>
+    <id>https://jinghong.ml/posts/de13.html</id>
+    <published>2020-01-28T16:00:00.000Z</published>
+    <updated>2020-02-27T06:20:34.943Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;localStorage&quot;&gt;&lt;a href=&quot;#localStorage&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Web Storage" scheme="https://jinghong.ml/tags/Web-Storage/"/>
+    
+      <category term="LocalStorage" scheme="https://jinghong.ml/tags/LocalStorage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IndexedDB</title>
+    <link href="https://jinghong.ml/posts/2cbc.html"/>
+    <id>https://jinghong.ml/posts/2cbc.html</id>
+    <published>2020-01-28T16:00:00.000Z</published>
+    <updated>2020-02-27T06:20:59.918Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;IndexedDB&quot;&gt;&lt;a href=&quot;#IndexedDB&quot; class=&quot;headerlink&quot; title=&quot;IndexedDB&quot;&gt;&lt;/a&gt;IndexedDB&lt;/h1&gt;&lt;p&gt;参考链接：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Web Storage" scheme="https://jinghong.ml/tags/Web-Storage/"/>
+    
+      <category term="IndexedDB" scheme="https://jinghong.ml/tags/IndexedDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue</title>
+    <link href="https://jinghong.ml/posts/ab06.html"/>
+    <id>https://jinghong.ml/posts/ab06.html</id>
+    <published>2019-11-05T16:00:00.000Z</published>
+    <updated>2020-02-27T08:39:57.293Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Vue-js&quot;&gt;&lt;a href=&quot;#Vue-js&quot; class=&quot;headerlink&quot; title=&quot;Vue.js&quot;&gt;&lt;/a&gt;Vue.js&lt;/h2&gt;&lt;h2 id=&quot;第-0-章-Vue-介绍&quot;&gt;&lt;a href=&quot;#第-0-章-Vue-介绍&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Vue" scheme="https://jinghong.ml/tags/Vue/"/>
+    
+      <category term="Vuex" scheme="https://jinghong.ml/tags/Vuex/"/>
+    
+      <category term="VueRouter" scheme="https://jinghong.ml/tags/VueRouter/"/>
+    
+      <category term="vue-cli" scheme="https://jinghong.ml/tags/vue-cli/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Node</title>
+    <link href="https://jinghong.ml/posts/decd.html"/>
+    <id>https://jinghong.ml/posts/decd.html</id>
+    <published>2019-10-10T16:00:00.000Z</published>
+    <updated>2020-02-27T08:41:27.955Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Nodejs编程&quot;&gt;&lt;a href=&quot;#Nodejs编程&quot; class=&quot;headerlink&quot; title=&quot;Nodejs编程&quot;&gt;&lt;/a&gt;Nodejs编程&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;第0章-Node介绍&quot;&gt;&lt;a href=&quot;#第0章-Node介绍&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Back" scheme="https://jinghong.ml/categories/Back/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Node" scheme="https://jinghong.ml/tags/Node/"/>
+    
+      <category term="express" scheme="https://jinghong.ml/tags/express/"/>
+    
+      <category term="Koa" scheme="https://jinghong.ml/tags/Koa/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Canvas</title>
     <link href="https://jinghong.ml/posts/7c26.html"/>
     <id>https://jinghong.ml/posts/7c26.html</id>
     <published>2019-09-16T16:00:00.000Z</published>
-    <updated>2020-02-26T16:01:54.303Z</updated>
+    <updated>2020-02-27T06:21:23.108Z</updated>
     
     <summary type="html">
     
@@ -93,37 +253,12 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
     
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
     
       <category term="Canvas" scheme="https://jinghong.ml/tags/Canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS中Buffer数据详解</title>
-    <link href="https://jinghong.ml/posts/bd7.html"/>
-    <id>https://jinghong.ml/posts/bd7.html</id>
-    <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-02-26T16:06:19.869Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
-    
-    
-      <category term="Buffer" scheme="https://jinghong.ml/tags/Buffer/"/>
     
   </entry>
   
@@ -132,7 +267,7 @@
     <link href="https://jinghong.ml/posts/3a3a.html"/>
     <id>https://jinghong.ml/posts/3a3a.html</id>
     <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-02-26T16:30:37.429Z</updated>
+    <updated>2020-02-27T06:22:31.155Z</updated>
     
     <summary type="html">
     
@@ -148,8 +283,10 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
     
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
     
       <category term="音乐可视化" scheme="https://jinghong.ml/tags/%E9%9F%B3%E4%B9%90%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
@@ -158,11 +295,40 @@
   </entry>
   
   <entry>
+    <title>JS中Buffer数据详解</title>
+    <link href="https://jinghong.ml/posts/bd7.html"/>
+    <id>https://jinghong.ml/posts/bd7.html</id>
+    <published>2019-09-15T16:00:00.000Z</published>
+    <updated>2020-02-27T06:21:47.100Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Buffer" scheme="https://jinghong.ml/tags/Buffer/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ajax</title>
     <link href="https://jinghong.ml/posts/921d.html"/>
     <id>https://jinghong.ml/posts/921d.html</id>
     <published>2019-08-26T16:00:00.000Z</published>
-    <updated>2020-02-26T16:17:32.125Z</updated>
+    <updated>2020-02-27T06:21:57.396Z</updated>
     
     <summary type="html">
     
@@ -177,12 +343,77 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://jinghong.ml/categories/JavaScript/"/>
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
     
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
     
       <category term="Ajax" scheme="https://jinghong.ml/tags/Ajax/"/>
     
       <category term="CORS" scheme="https://jinghong.ml/tags/CORS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webSocket</title>
+    <link href="https://jinghong.ml/posts/a65a.html"/>
+    <id>https://jinghong.ml/posts/a65a.html</id>
+    <published>2019-07-09T16:00:00.000Z</published>
+    <updated>2020-02-27T08:54:17.472Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;WebSocket介绍、使用&quot;&gt;&lt;a href=&quot;#WebSocket介绍、使用&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Back" scheme="https://jinghong.ml/categories/Back/"/>
+    
+    
+      <category term="Node" scheme="https://jinghong.ml/tags/Node/"/>
+    
+      <category term="webSocket" scheme="https://jinghong.ml/tags/webSocket/"/>
+    
+      <category term="socket.io" scheme="https://jinghong.ml/tags/socket-io/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cookie</title>
+    <link href="https://jinghong.ml/posts/295f.html"/>
+    <id>https://jinghong.ml/posts/295f.html</id>
+    <published>2019-03-31T16:00:00.000Z</published>
+    <updated>2020-02-27T06:21:10.659Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;什么是cookie&quot;&gt;&lt;a href=&quot;#什么是cookie&quot; class=&quot;headerlink&quot; title=&quot;什么是cookie&quot;&gt;&lt;/a&gt;什么是cookie&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;cookie:会话跟踪技术
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Web Storage" scheme="https://jinghong.ml/tags/Web-Storage/"/>
+    
+      <category term="Cookie" scheme="https://jinghong.ml/tags/Cookie/"/>
     
   </entry>
   
