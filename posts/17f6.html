@@ -1,0 +1,363 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="html5"><meta name="description" content="一、H5拖拽JS里拖拽三事件， onmousedown onmousemove onmouseup 是实现交互性效果，根据鼠标的移动位置让标签元素联动
+而H5拖拽也可以实现但更简单，实际例子： 百度图片识别，qq邮箱文件提交，百度网盘文件上"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="baidu-site-verification" content="LOg3u41Vsp"><meta name="sogou_site_verification" content="r2b9FKw94y"><title>HTML5新特性 | Jing Hong</title><link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/medias/logo.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/awesome/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/materialize/materialize.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/aos/aos.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/animate/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/css/matery.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/css/my.css"><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Jing Hong" type="application/atom+xml"><link rel="stylesheet" href="/css/prism-tomorrow.css"></head><body><div class="load-mask"><div class="load"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" alt="loading"></div></div><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><div style="white-space:nowrap"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/medias/avatar.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">Jing Hong</span></div></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>关于</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom:.6"></i> <span>留言板</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/medias/avatar.jpg" class="logo-img circle responsive-img"><div class="logo-name">Jing Hong</div><div class="logo-desc">编程袁一只！专注编程！！！</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-comments"></i> 留言板</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/cryptojs/crypto-js.min.js"></script><script>(function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();</script><div class="bg-cover pd-header post-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/medias/featureimages/20.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">HTML5新特性</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px}#toc-content .is-active-link{color:#42b983}#toc-content .is-active-link::before{background-color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a> <a href="/tags/H5/"><span class="chip bg-color">H5</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Front/" class="post-category">Front</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-03-07</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 2k</div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h2 id="一、H5拖拽"><a href="#一、H5拖拽" class="headerlink" title="一、H5拖拽"></a>一、H5拖拽</h2><p>JS里拖拽三事件， onmousedown onmousemove onmouseup 是实现交互性效果，根据鼠标的移动位置让标签元素联动</p><p>而H5拖拽也可以实现但更简单，实际例子： 百度图片识别，qq邮箱文件提交，百度网盘文件上传，并可以获取到文件的 名称，大小，修改时间</p><p>标签元素默认是不可以拖拽的，<code>draggable=&quot;true&quot;</code>才能够被拖拽</p><ul><li><code>js</code>和<code>h5</code>拖拽的对比</li><li><code>drag</code>七事件的理解<ul><li>只是简单的拖拽而没有数据交换是没有什么用的</li></ul></li></ul><pre class="language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 拖拽元素</span>
+        drag<span class="token punctuation">.</span>ondragstart <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">// 拖拽的一瞬间</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>background <span class="token operator">=</span> <span class="token string">'pink'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        drag<span class="token punctuation">.</span>ondrag <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 连续触发</span>
+            document<span class="token punctuation">.</span>title <span class="token operator">=</span> n<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        drag<span class="token punctuation">.</span>ondragend <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>background <span class="token operator">=</span> <span class="token string">'red'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment" spellcheck="true">// 目标元素</span>
+        box<span class="token punctuation">.</span>ondragenter <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 监听拖拽元素进入到目标元素区域内</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>background <span class="token operator">=</span> <span class="token string">'skyblue'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        box<span class="token punctuation">.</span>ondragover <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 在目标元素身上 连续触发</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> n<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        box<span class="token punctuation">.</span>ondragleave <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 在目标元素身上离开</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        box<span class="token punctuation">.</span>ondrop <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 将拖动的元素放置在目标元素上时触发</span>
+
+        <span class="token punctuation">}</span></code></pre><ul><li><code>drag</code>兼容处理方式</li><li>捕获<code>dataTransfer</code>对象里的数据</li></ul><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> li <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+li<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span>index<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+    item<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'draggable'</span><span class="token punctuation">,</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    item<span class="token punctuation">.</span>ondragstart <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// console.log(e.dataTransfer.setData())</span>
+        e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token string">'key'</span><span class="token punctuation">,</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
+    e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+    e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type<span class="token punctuation">,</span>
+    e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>lastModified<span class="token punctuation">,</span>
+    e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>lastModifiedDate<span class="token punctuation">.</span><span class="token function">toLocaleDateString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>lastModifiedDate<span class="token punctuation">.</span><span class="token function">toLocaleTimeString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>lastModifiedDate<span class="token punctuation">.</span><span class="token function">toDateString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><ul><li><p><code>Blog</code>对象与<code>URL</code>对象读取数据</p><p>Blob对象代表了一段二进制数据，提供了一系列操作接口</p><pre><code>file对象的父类型是Blob对象</code></pre><p>​对象URL也被称为 blob URL，指的是引用保存在File或Blob中数据的URL，使用对象URL的好处是没必要把内容读取到js中，而直接使用文件内容，能生成一个链接，例如 Img的src = URL</p><pre class="language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 拖拽图片预览</span>
+            <span class="token keyword">let</span> oFile <span class="token operator">=</span> e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">let</span> blob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span><span class="token punctuation">[</span>oFile<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">// 第一参数一定是个数组 第二个mime类型</span>
+            <span class="token keyword">let</span> url <span class="token operator">=</span> window<span class="token punctuation">.</span>URL<span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">let</span> img <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Image</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            img<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">;</span>
+            img<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">150</span><span class="token punctuation">;</span>
+            img<span class="token punctuation">.</span>src <span class="token operator">=</span> url<span class="token punctuation">;</span>
+            img<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span></code></pre></li><li><p><code>FileReader</code>读取数据</p><pre class="language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 拖拽图片预览</span>
+            <span class="token keyword">let</span> oFile <span class="token operator">=</span> e<span class="token punctuation">.</span>dataTransfer<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// 创建文件读取对象</span>
+            <span class="token keyword">let</span> reader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            reader<span class="token punctuation">.</span><span class="token function">readAsDataURL</span><span class="token punctuation">(</span>oFile<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">// 分析oFile 文件对象</span>
+            reader<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">// 返回data: base64数据  A-Z a-z 0~9 + / = 64位字符</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>result <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">let</span> img <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Image</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                img<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">;</span>
+                img<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">150</span><span class="token punctuation">;</span>
+                img<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>result<span class="token punctuation">;</span>
+                img<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span></code></pre></li></ul><ul><li><p>mime类型</p><pre><code>
+application/envoy    evy
+application/fractals    fif
+application/futuresplash    spl
+application/hta    hta
+application/internet-property-stream    acx
+application/mac-binhex40    hqx
+application/msword    doc
+application/msword    dot
+application/octet-stream    *
+application/octet-stream    bin
+application/octet-stream    class
+application/octet-stream    dms
+application/octet-stream    exe
+application/octet-stream    lha
+application/octet-stream    lzh
+application/oda    oda
+application/olescript    axs
+application/pdf    pdf
+application/pics-rules    prf
+application/pkcs10    p10
+application/pkix-crl    crl
+application/postscript    ai
+application/postscript    eps
+application/postscript    ps
+application/rtf    rtf
+application/set-payment-initiation    setpay
+application/set-registration-initiation    setreg
+application/vnd.ms-excel    xla
+application/vnd.ms-excel    xlc
+application/vnd.ms-excel    xlm
+application/vnd.ms-excel    xls
+application/vnd.ms-excel    xlt
+application/vnd.ms-excel    xlw
+application/vnd.ms-outlook    msg
+application/vnd.ms-pkicertstore    sst
+application/vnd.ms-pkiseccat    cat
+application/vnd.ms-pkistl    stl
+application/vnd.ms-powerpoint    pot
+application/vnd.ms-powerpoint    pps
+application/vnd.ms-powerpoint    ppt
+application/vnd.ms-project    mpp
+application/vnd.ms-works    wcm
+application/vnd.ms-works    wdb
+application/vnd.ms-works    wks
+application/vnd.ms-works    wps
+application/winhlp    hlp
+application/x-bcpio    bcpio
+application/x-cdf    cdf
+application/x-compress    z
+application/x-compressed    tgz
+application/x-cpio    cpio
+application/x-csh    csh
+application/x-director    dcr
+application/x-director    dir
+application/x-director    dxr
+application/x-dvi    dvi
+application/x-gtar    gtar
+application/x-gzip    gz
+application/x-hdf    hdf
+application/x-internet-signup    ins
+application/x-internet-signup    isp
+application/x-iphone    iii
+application/x-javascript    js
+application/x-latex    latex
+application/x-msaccess    mdb
+application/x-mscardfile    crd
+application/x-msclip    clp
+application/x-msdownload    dll
+application/x-msmediaview    m13
+application/x-msmediaview    m14
+application/x-msmediaview    mvb
+application/x-msmetafile    wmf
+application/x-msmoney    mny
+application/x-mspublisher    pub
+application/x-msschedule    scd
+application/x-msterminal    trm
+application/x-mswrite    wri
+application/x-netcdf    cdf
+application/x-netcdf    nc
+application/x-perfmon    pma
+application/x-perfmon    pmc
+application/x-perfmon    pml
+application/x-perfmon    pmr
+application/x-perfmon    pmw
+application/x-pkcs12    p12
+application/x-pkcs12    pfx
+application/x-pkcs7-certificates    p7b
+application/x-pkcs7-certificates    spc
+application/x-pkcs7-certreqresp    p7r
+application/x-pkcs7-mime    p7c
+application/x-pkcs7-mime    p7m
+application/x-pkcs7-signature    p7s
+application/x-sh    sh
+application/x-shar    shar
+application/x-shockwave-flash    swf
+application/x-stuffit    sit
+application/x-sv4cpio    sv4cpio
+application/x-sv4crc    sv4crc
+application/x-tar    tar
+application/x-tcl    tcl
+application/x-tex    tex
+application/x-texinfo    texi
+application/x-texinfo    texinfo
+application/x-troff    roff
+application/x-troff    t
+application/x-troff    tr
+application/x-troff-man    man
+application/x-troff-me    me
+application/x-troff-ms    ms
+application/x-ustar    ustar
+application/x-wais-source    src
+application/x-x509-ca-cert    cer
+application/x-x509-ca-cert    crt
+application/x-x509-ca-cert    der
+application/ynd.ms-pkipko    pko
+application/zip    zip
+audio/basic    au
+audio/basic    snd
+audio/mid    mid
+audio/mid    rmi
+audio/mpeg    mp3
+audio/x-aiff    aif
+audio/x-aiff    aifc
+audio/x-aiff    aiff
+audio/x-mpegurl    m3u
+audio/x-pn-realaudio    ra
+audio/x-pn-realaudio    ram
+audio/x-wav    wav
+image/bmp    bmp
+image/cis-cod    cod
+image/gif    gif
+image/ief    ief
+image/jpeg    jpe
+image/jpeg    jpeg
+image/jpeg    jpg
+image/pipeg    jfif
+image/svg+xml    svg
+image/tiff    tif
+image/tiff    tiff
+image/x-cmu-raster    ras
+image/x-cmx    cmx
+image/x-icon    ico
+image/x-portable-anymap    pnm
+image/x-portable-bitmap    pbm
+image/x-portable-graymap    pgm
+image/x-portable-pixmap    ppm
+image/x-rgb    rgb
+image/x-xbitmap    xbm
+image/x-xpixmap    xpm
+image/x-xwindowdump    xwd
+message/rfc822    mht
+message/rfc822    mhtml
+message/rfc822    nws
+text/css    css
+text/h323    323
+text/html    htm
+text/html    html
+text/html    stm
+text/iuls    uls
+text/plain    bas
+text/plain    c
+text/plain    h
+text/plain    txt
+text/richtext    rtx
+text/scriptlet    sct
+text/tab-separated-values    tsv
+text/webviewhtml    htt
+text/x-component    htc
+text/x-setext    etx
+text/x-vcard    vcf
+video/mpeg    mp2
+video/mpeg    mpa
+video/mpeg    mpe
+video/mpeg    mpeg
+video/mpeg    mpg
+video/mpeg    mpv2
+video/quicktime    mov
+video/quicktime    qt
+video/x-la-asf    lsf
+video/x-la-asf    lsx
+video/x-ms-asf    asf
+video/x-ms-asf    asr
+video/x-ms-asf    asx
+video/x-msvideo    avi
+video/x-sgi-movie    movie
+x-world/x-vrml    flr
+x-world/x-vrml    vrml
+x-world/x-vrml    wrl
+x-world/x-vrml    wrz
+x-world/x-vrml    xaf
+x-world/x-vrml    xof</code></pre></li></ul><h2 id="二、新增方法及历史管理"><a href="#二、新增方法及历史管理" class="headerlink" title="二、新增方法及历史管理"></a>二、新增方法及历史管理</h2><ul><li>通过<code>classList</code>对象对<code>class</code>类名增删改查</li><li>通过<code>dataset</code>对象对<code>data-Attr</code>格式的数据增删改查</li><li><code>parse</code>与<code>stringify</code>函数对数据类型解析和编码类型</li><li><code>decodeURL</code>与<code>encodeURL</code>函数对url数据进行解码和编码</li><li><code>atob</code>与<code>btoa</code>函数对<code>base64</code>数据进行解码和编码</li><li><code>history</code>操作数据布局</li><li><code>history</code>实现历史管理功能</li><li><code>history</code>对象下的<code>back</code>-<code>forward</code>-<code>go</code></li></ul><h2 id="三、Ajax数据交互及文件上传功能"><a href="#三、Ajax数据交互及文件上传功能" class="headerlink" title="三、Ajax数据交互及文件上传功能"></a>三、Ajax数据交互及文件上传功能</h2><ul><li><p>文件下载方式</p></li><li><p><code>ajax</code>和<code>php</code>数据交互</p></li><li><p>真实服务器数据交互演示及跨域访问</p></li><li><p><code>jsonp</code>跨域访问的核心本质</p></li><li><p><code>ajax</code> 和 <code>原生node</code> 数据交互</p></li><li><p><code>ajax</code> 和 <code>express框架</code> 数据交互</p></li><li><p><code>ajax</code> 和 <code>koa2框架</code> 数据交互</p></li><li><p>通过表单控件及<code>FormData</code>对象上传文件到服务器</p></li><li><p>通过H5拖拽及<code>FormData</code>对象上传文件到服务器</p></li><li><p>通过<code>onprogress</code>事件及<code>loaded</code>与<code>total</code>属性真实显示上传进度</p></li><li><p>同源同域名下跨文档操作</p></li></ul><h2 id="四、H5本地存储localStorage-webWorker多线程-Server-Sent-Event服务器发送事件-离线存储cache应用"><a href="#四、H5本地存储localStorage-webWorker多线程-Server-Sent-Event服务器发送事件-离线存储cache应用" class="headerlink" title="四、H5本地存储localStorage-webWorker多线程-Server-Sent-Event服务器发送事件-离线存储cache应用"></a>四、H5本地存储localStorage-webWorker多线程-Server-Sent-Event服务器发送事件-离线存储cache应用</h2><ul><li><code>setItem</code>与<code>getItem</code>存储和获取数据</li><li><code>webWorker</code>多线程原理</li><li>SSE 服务器消息推送</li><li>真实服务器演示 <code>cache离线存储设计</code></li></ul><pre><code>var source=new EventSource(&quot;demo_sse.php&quot;);
+source.onmessage=function(event)
+  {
+  document.getElementById(&quot;result&quot;).innerHTML+=event.data + &quot;&lt;br /&gt;&quot;;
+  };
+
+
+  &lt;?php
+header(&#39;Content-Type: text/event-stream&#39;);
+header(&#39;Cache-Control: no-cache&#39;);
+
+$time = date(&#39;r&#39;);
+echo &quot;data: The server time is: {$time}\n\n&quot;;
+flush();    //刷新缓冲区的内容,输出
+?&gt;</code></pre><h2 id="五、canvas-技术"><a href="#五、canvas-技术" class="headerlink" title="五、canvas 技术"></a>五、canvas 技术</h2><ul><li>canvas认识</li><li>4种矩形用法</li><li>样式属性</li><li>线条函数</li><li>路径问题</li><li>边界和端点样式</li><li>圆形函数用法</li><li>变换函数用法</li><li>保存和释放路径</li><li>图片绘制<ul><li>视频绘制</li><li>填充背景方式</li><li>线性渐变</li><li>径向渐变</li><li>曲线函数</li><li>贝赛尔曲线画法</li><li>绘制文字</li><li>时钟表盘数字算法</li><li>图形阴影</li><li>像素操作</li><li>处理图片像素</li><li>图像合成</li><li>canvas画面导出</li></ul></li></ul><h2 id="七、video和audio"><a href="#七、video和audio" class="headerlink" title="七、video和audio"></a>七、video和audio</h2><ul><li>视频格式和音频格式</li></ul><ul><li>标签属性<ul><li>src</li><li>autoplay</li><li>controls</li><li>width</li><li>height</li><li>loop</li><li>preload</li><li>poster</li></ul></li></ul><ul><li>方法<ul><li>play( )</li><li>pause( )</li></ul><ul><li>事件</li><li>onplay</li><li>onpause</li><li>ontimeupdate</li><li>onended</li><li>progress</li><li></li><li>属性</li><li>currentTime</li><li>duration</li><li>ended</li><li>volume</li><li>height</li><li>width</li><li>currentSrc</li><li>videoWidth</li><li>videoHeight</li></ul></li></ul><h2 id="八、地理位置信息与高德地图API"><a href="#八、地理位置信息与高德地图API" class="headerlink" title="八、地理位置信息与高德地图API"></a>八、地理位置信息与高德地图API</h2><ul><li>原生API经纬度获取</li><li>高德地图JS-API调用</li></ul><h2 id="九、移动端"><a href="#九、移动端" class="headerlink" title="九、移动端"></a>九、移动端</h2><ul><li>移动端事件<ul><li>搭建真机测试</li><li>触屏三事件<ul><li>touchstart</li><li>touchmove</li><li>touchend</li></ul></li><li>手指信息对象</li></ul></li><li>三种适配方案<ul><li>百分比</li><li>自适应</li><li>rem</li><li>less语法及编译</li></ul></li></ul><p>​</p></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="https://www.jinghong.ml" rel="external nofollow noreferrer">Jing Hong</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://www.jinghong.ml/posts/17f6.html">https://www.jinghong.ml/posts/17f6.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="https://www.jinghong.ml" target="_blank">Jing Hong</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a> <a href="/tags/H5/"><span class="chip bg-color">H5</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/valine/av-min.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"J9sh9ev0bWNYJHXJ259oelol-gzGzoHsz",appKey:"dMAddMTzSDSVxKvVOG0sLLdM",notify:!0,verify:!0,visitor:!0,avatar:"/medias/avatar.jpg",pageSize:"10",lang:"zh-cn",placeholder:"just go go"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/posts/c9c3.html"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/medias/featureimages/12.jpg" class="responsive-img" alt="Chrome Devtools"> <span class="card-title">Chrome Devtools</span></div></a><div class="card-content article-content"><div class="summary block-with-text">Chrome Devtools 使用技巧1.网页可编辑(1)document.designMode = ‘on’(2)打开任何网站，在网址栏输入:可手机端javascdy.setAttribute(‘contentEditable’,’tr</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-03-07</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Front/" class="post-category">Front</a></span></div></div><div class="card-action article-tags"><a href="/tags/Chrome-Devtools/"><span class="chip bg-color">Chrome Devtools</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/33ad.html"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/medias/featureimages/8.jpg" class="responsive-img" alt="ES6"> <span class="card-title">ES6</span></div></a><div class="card-content article-content"><div class="summary block-with-text">ES6变量声明扩展变量声明的特性比较 语法格式 声明类型 是否可重复声明 是否声明提升 特性 var 变量 YES YES 无块级作用域、限制性太弱 let 变量 NO NO 有块级作用域、不可重复、无声明提升、限制性强</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-03-07</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Front/" class="post-category">Front</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a> <a href="/tags/ES6/"><span class="chip bg-color">ES6</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: Jing Hong<br />文章作者: Jing Hong<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归作者所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/codeBlock/codeBlockFuction.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/codeBlock/codeLang.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/codeBlock/codeCopy.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:0!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <a href="https://www.jinghong.ml" target="_blank">Jing Hong</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><br><br></div><div class="col s12 m4 l4 social-link"><a href="https://github.com/jinghong0202" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:979892455@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a> <a href="https://gitee.com/jinghong0919" class="tooltipped" target="_blank" data-tooltip="访问我的Gitee" data-position="top" data-delay="50">Gitee</a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=979892455" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 979892455" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a><a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="fas fa-rss"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/js/search.js"></script><script>$(function(){searchFunc("https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script>window.onload = () => {
+           var load = document.querySelector('.load-mask')
+           load.ontransitionend = () => {
+               load.style.display = 'none'
+           }
+           load.style.opacity = 0;
+           
+        }</script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/materialize/materialize.min.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/masonry/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/aos/aos.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/scrollprogress/scrollProgress.min.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/js/matery.js"></script><script>window.$crisp=[],window.CRISP_WEBSITE_ID="3d25ddec-0e9c-42aa-bfba-ce5a824b727d",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?0de9b11510dfcd04b3ec5da35ab10447";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/background/ribbon-dynamic.js" async></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/libs/instantpage/instantpage.js" type="module"></script><canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:1;pointer-events:none"></canvas><script src="https://cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/js/fireworks.js" async></script><script>var windowWidth=$(window).width();768<windowWidth&&document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/js/sakura.js" async="async" ><\/script><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/jinghong0202/live2d-widget@v0.7.4/autoload.js" async="async"><\/script>')</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)0<=(t=c[r].getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(e.innerHeight+240||document.documentElement.clientHeight+240)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n()},e.src=i}();var t}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this)</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})})</script></body></html>

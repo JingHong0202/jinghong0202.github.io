@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: source/images
+public_folder: /images
+collections:
+  - name: all_posts
+    fields: &ref_0
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        dateFormat: YYYY-MM-DD
+        timeFormat: 'HH:mm:ss'
+        format: 'YYYY-MM-DD HH:mm:ss'
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: false
+      - label: Comments
+        name: comments
+        widget: boolean
+        default: true
+        required: false
+    label: Post
+    folder: source/_posts
+    create: true
+    editor:
+      preview: true
+  - label: Page
+    name: pages
+    delete: false
+    files:
+      - name: 404.md
+        label: '404'
+        file: source\404.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: about-index.md
+        label: about
+        file: source\about\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: tags-index.md
+        label: tags
+        file: source\tags\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: friends-index.md
+        label: friends
+        file: source\friends\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: contact-index.md
+        label: contact
+        file: source\contact\index.md
+        editor:
+          preview: true
+        fields: *ref_0
