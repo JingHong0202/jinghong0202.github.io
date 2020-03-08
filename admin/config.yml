@@ -64,15 +64,15 @@ collections:
         editor:
           preview: true
         fields: *ref_0
-      - name: tags-index.md
-        label: tags
-        file: source\tags\index.md
-        editor:
-          preview: true
-        fields: *ref_0
       - name: friends-index.md
         label: friends
         file: source\friends\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: tags-index.md
+        label: tags
+        file: source\tags\index.md
         editor:
           preview: true
         fields: *ref_0
