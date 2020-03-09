@@ -3,19 +3,35 @@ backend:
   branch: master
 media_folder: source/images
 public_folder: /images
+publish_mode: editorial_workflow
 collections:
-  - name: all_posts
+  - name: base_posts
     fields: &ref_0
+      - label: Banner
+        name: img
+        widget: image
+        required: false
+      - label: Top
+        name: top
+        widget: boolean
+        required: false
+      - label: Cover
+        name: cover
+        widget: boolean
+        required: false
+      - label: Password
+        name: password
+        widget: number
+        required: false
       - label: Title
         name: title
         widget: string
       - label: Publish Date
         name: date
-        widget: datetime
-        dateFormat: YYYY-MM-DD
-        timeFormat: 'HH:mm:ss'
-        format: 'YYYY-MM-DD HH:mm:ss'
+        widget: date
         required: false
+        dateFormat: YYYY-MM-DD
+        format: YYYY-MM-DD
       - label: Tags
         name: tags
         widget: list
@@ -24,21 +40,23 @@ collections:
         name: categories
         widget: list
         required: false
+      - label: Keywords
+        name: keywords
+        widget: string
+        required: false
       - label: Body
         name: body
         widget: markdown
         required: false
-      - label: Permalink
-        name: permalink
-        widget: string
-        required: false
-      - label: Comments
-        name: comments
-        widget: boolean
-        default: true
-        required: false
-    label: Post
-    folder: source/_posts
+    label: 文章
+    folder: source/_posts/base
+    create: true
+    editor:
+      preview: true
+  - name: notes_posts
+    fields: *ref_0
+    label: 笔记
+    folder: source/_posts/notes
     create: true
     editor:
       preview: true
@@ -50,35 +68,53 @@ collections:
         label: '404'
         file: source\404.md
         editor:
-          preview: true
-        fields: *ref_0
-      - name: categories-index.md
-        label: categories
-        file: source\categories\index.md
-        editor:
-          preview: true
-        fields: *ref_0
-      - name: contact-index.md
-        label: contact
-        file: source\contact\index.md
-        editor:
-          preview: true
+          preview: false
         fields: *ref_0
       - name: about-index.md
         label: about
         file: source\about\index.md
         editor:
-          preview: true
+          preview: false
         fields: *ref_0
-      - name: tags-index.md
-        label: tags
-        file: source\tags\index.md
+      - name: contact-index.md
+        label: contact
+        file: source\contact\index.md
         editor:
-          preview: true
+          preview: false
+        fields: *ref_0
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
+        editor:
+          preview: false
         fields: *ref_0
       - name: friends-index.md
         label: friends
         file: source\friends\index.md
         editor:
-          preview: true
+          preview: false
+        fields: *ref_0
+      - name: galleries-index.md
+        label: 相册
+        file: source\galleries\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: notes-index.md
+        label: 笔记
+        file: source\notes\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: tags-index.md
+        label: tags
+        file: source\tags\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-blog-index.md
+        label: blog
+        file: source\galleries\blog\index.md
+        editor:
+          preview: false
         fields: *ref_0

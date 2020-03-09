@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jinghong.ml/"/>
-  <updated>2020-03-08T03:03:54.320Z</updated>
+  <updated>2020-03-09T06:56:08.093Z</updated>
   <id>https://www.jinghong.ml/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Chrome Devtools</title>
     <link href="https://www.jinghong.ml/posts/c9c3.html"/>
     <id>https://www.jinghong.ml/posts/c9c3.html</id>
-    <published>2020-03-07T13:59:34.385Z</published>
-    <updated>2020-03-08T03:03:54.320Z</updated>
+    <published>2020-03-09T06:56:08.091Z</published>
+    <updated>2020-03-09T06:56:08.093Z</updated>
     
     <summary type="html">
     
@@ -47,8 +47,8 @@
     <title>HTML5新特性</title>
     <link href="https://www.jinghong.ml/posts/17f6.html"/>
     <id>https://www.jinghong.ml/posts/17f6.html</id>
-    <published>2020-03-07T13:55:38.208Z</published>
-    <updated>2020-03-05T07:24:21.067Z</updated>
+    <published>2020-03-08T07:02:22.017Z</published>
+    <updated>2020-03-09T06:52:24.458Z</updated>
     
     <summary type="html">
     
@@ -68,6 +68,8 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="H5" scheme="https://www.jinghong.ml/tags/H5/"/>
     
   </entry>
@@ -76,8 +78,8 @@
     <title>ES6</title>
     <link href="https://www.jinghong.ml/posts/33ad.html"/>
     <id>https://www.jinghong.ml/posts/33ad.html</id>
-    <published>2020-03-07T13:55:38.205Z</published>
-    <updated>2020-03-05T07:22:23.913Z</updated>
+    <published>2020-03-08T07:02:22.014Z</published>
+    <updated>2020-03-09T06:52:14.123Z</updated>
     
     <summary type="html">
     
@@ -97,7 +99,73 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="ES6" scheme="https://www.jinghong.ml/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TypeScript</title>
+    <link href="https://www.jinghong.ml/posts/cc59.html"/>
+    <id>https://www.jinghong.ml/posts/cc59.html</id>
+    <published>2020-03-08T06:25:32.000Z</published>
+    <updated>2020-03-09T06:53:02.931Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;tsconfig-文件配置选项介绍&quot;&gt;&lt;a href=&quot;#tsconfig-文件配置选项介绍&quot; class=&quot;headerlink&quot; title=&quot;tsconfig 文件配置选项介绍&quot;&gt;&lt;/a&gt;tsconfig 文件配置选项介绍&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="TypeScript" scheme="https://www.jinghong.ml/tags/TypeScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IndexedDB</title>
+    <link href="https://www.jinghong.ml/posts/2cbc.html"/>
+    <id>https://www.jinghong.ml/posts/2cbc.html</id>
+    <published>2020-01-28T16:00:00.000Z</published>
+    <updated>2020-03-09T06:52:34.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;IndexedDB&quot;&gt;&lt;a href=&quot;#IndexedDB&quot; class=&quot;headerlink&quot; title=&quot;IndexedDB&quot;&gt;&lt;/a&gt;IndexedDB&lt;/h1&gt;&lt;p&gt;参考链接：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
+    
+      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="IndexedDB" scheme="https://www.jinghong.ml/tags/IndexedDB/"/>
     
   </entry>
   
@@ -106,7 +174,7 @@
     <link href="https://www.jinghong.ml/posts/de13.html"/>
     <id>https://www.jinghong.ml/posts/de13.html</id>
     <published>2020-01-28T16:00:00.000Z</published>
-    <updated>2020-03-08T03:05:46.968Z</updated>
+    <updated>2020-03-09T06:52:42.531Z</updated>
     
     <summary type="html">
     
@@ -130,36 +198,7 @@
     
       <category term="LocalStorage" scheme="https://www.jinghong.ml/tags/LocalStorage/"/>
     
-  </entry>
-  
-  <entry>
-    <title>IndexedDB</title>
-    <link href="https://www.jinghong.ml/posts/2cbc.html"/>
-    <id>https://www.jinghong.ml/posts/2cbc.html</id>
-    <published>2020-01-28T16:00:00.000Z</published>
-    <updated>2020-03-08T03:05:42.152Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;IndexedDB&quot;&gt;&lt;a href=&quot;#IndexedDB&quot; class=&quot;headerlink&quot; title=&quot;IndexedDB&quot;&gt;&lt;/a&gt;IndexedDB&lt;/h1&gt;&lt;p&gt;参考链接：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
-    
-    
-      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
-    
-      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
-    
-      <category term="IndexedDB" scheme="https://www.jinghong.ml/tags/IndexedDB/"/>
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -168,7 +207,7 @@
     <link href="https://www.jinghong.ml/posts/ab06.html"/>
     <id>https://www.jinghong.ml/posts/ab06.html</id>
     <published>2019-11-05T16:00:00.000Z</published>
-    <updated>2020-03-08T03:07:30.005Z</updated>
+    <updated>2020-03-09T06:53:38.835Z</updated>
     
     <summary type="html">
     
@@ -188,6 +227,8 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="Vue" scheme="https://www.jinghong.ml/tags/Vue/"/>
     
       <category term="Vuex" scheme="https://www.jinghong.ml/tags/Vuex/"/>
@@ -203,7 +244,7 @@
     <link href="https://www.jinghong.ml/posts/decd.html"/>
     <id>https://www.jinghong.ml/posts/decd.html</id>
     <published>2019-10-10T16:00:00.000Z</published>
-    <updated>2020-03-08T03:05:52.085Z</updated>
+    <updated>2020-03-09T06:52:52.507Z</updated>
     
     <summary type="html">
     
@@ -222,9 +263,11 @@
       <category term="Back" scheme="https://www.jinghong.ml/categories/Back/"/>
     
     
+      <category term="Node" scheme="https://www.jinghong.ml/tags/Node/"/>
+    
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="Node" scheme="https://www.jinghong.ml/tags/Node/"/>
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="express" scheme="https://www.jinghong.ml/tags/express/"/>
     
@@ -237,7 +280,7 @@
     <link href="https://www.jinghong.ml/posts/7c26.html"/>
     <id>https://www.jinghong.ml/posts/7c26.html</id>
     <published>2019-09-16T16:00:00.000Z</published>
-    <updated>2020-03-08T03:03:54.319Z</updated>
+    <updated>2020-03-09T06:51:52.051Z</updated>
     
     <summary type="html">
     
@@ -258,6 +301,8 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="Canvas" scheme="https://www.jinghong.ml/tags/Canvas/"/>
     
   </entry>
@@ -267,7 +312,7 @@
     <link href="https://www.jinghong.ml/posts/bd7.html"/>
     <id>https://www.jinghong.ml/posts/bd7.html</id>
     <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-03-08T03:04:37.132Z</updated>
+    <updated>2020-03-09T08:58:56.157Z</updated>
     
     <summary type="html">
     
@@ -296,7 +341,7 @@
     <link href="https://www.jinghong.ml/posts/3a3a.html"/>
     <id>https://www.jinghong.ml/posts/3a3a.html</id>
     <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-03-08T03:05:59.687Z</updated>
+    <updated>2020-03-09T08:56:11.312Z</updated>
     
     <summary type="html">
     
@@ -326,7 +371,7 @@
     <link href="https://www.jinghong.ml/posts/921d.html"/>
     <id>https://www.jinghong.ml/posts/921d.html</id>
     <published>2019-08-26T16:00:00.000Z</published>
-    <updated>2020-03-05T07:23:26.472Z</updated>
+    <updated>2020-03-09T06:51:45.132Z</updated>
     
     <summary type="html">
     
@@ -346,6 +391,8 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="Ajax" scheme="https://www.jinghong.ml/tags/Ajax/"/>
     
       <category term="CORS" scheme="https://www.jinghong.ml/tags/CORS/"/>
@@ -357,7 +404,7 @@
     <link href="https://www.jinghong.ml/posts/a65a.html"/>
     <id>https://www.jinghong.ml/posts/a65a.html</id>
     <published>2019-07-09T16:00:00.000Z</published>
-    <updated>2020-03-08T03:06:04.711Z</updated>
+    <updated>2020-03-09T08:56:13.614Z</updated>
     
     <summary type="html">
     
@@ -388,7 +435,7 @@
     <link href="https://www.jinghong.ml/posts/295f.html"/>
     <id>https://www.jinghong.ml/posts/295f.html</id>
     <published>2019-03-31T16:00:00.000Z</published>
-    <updated>2020-03-08T03:05:33.856Z</updated>
+    <updated>2020-03-09T06:52:04.890Z</updated>
     
     <summary type="html">
     
@@ -410,6 +457,8 @@
       <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="Cookie" scheme="https://www.jinghong.ml/tags/Cookie/"/>
     
