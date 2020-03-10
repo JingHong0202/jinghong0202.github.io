@@ -116,37 +116,6 @@
     
     
     <entry>
-      <title>LocalStorage</title>
-      <link href="/posts/de13.html"/>
-      <url>/posts/de13.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="localStorage"><a href="#localStorage" class="headerlink" title="localStorage"></a>localStorage</h1><p>localStorage，在HTML5中，新加入了一个localStorage特性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie中每条cookie的存储空间为4k)，localStorage中一般浏览器支持的是5M大小，这个在不同的浏览器中localStorage会有所不同。</p><p>(1).储存数据</p><pre><code>localStorage.setItem(&#39;accessToken&#39;, &#39;Bearer &#39; + response.data.result.accessToken)</code></pre><p>(2).取出数据</p><pre><code>localStorage.getItem(&#39;accessToken&#39;)</code></pre><p>(3).删除储存数据</p><pre><code> localStorage.removeItem(&#39;accessToken&#39;)</code></pre><p>(4).更改数据</p><pre><code>localStorage.setItem(&#39;accessToken&#39;, &#39;更改后&#39; + response.data.result.accessToken)</code></pre><p>使用时有两点需要注意过的地方：</p><p>localStorage在浏览器的隐私模式下面是不可读取的。<br>localStorage本质上是对字符串的读取，有json格式时需要JSON.stringify()转化为字符串。<br>localStorage不能被爬虫抓取到</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Front </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Web Storage </tag>
-            
-            <tag> JavaScript </tag>
-            
-            <tag> LocalStorage </tag>
-            
-            <tag> 笔记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>IndexedDB</title>
       <link href="/posts/2cbc.html"/>
       <url>/posts/2cbc.html</url>
@@ -170,6 +139,37 @@
             <tag> 笔记 </tag>
             
             <tag> IndexedDB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LocalStorage</title>
+      <link href="/posts/de13.html"/>
+      <url>/posts/de13.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="localStorage"><a href="#localStorage" class="headerlink" title="localStorage"></a>localStorage</h1><p>localStorage，在HTML5中，新加入了一个localStorage特性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie中每条cookie的存储空间为4k)，localStorage中一般浏览器支持的是5M大小，这个在不同的浏览器中localStorage会有所不同。</p><p>(1).储存数据</p><pre><code>localStorage.setItem(&#39;accessToken&#39;, &#39;Bearer &#39; + response.data.result.accessToken)</code></pre><p>(2).取出数据</p><pre><code>localStorage.getItem(&#39;accessToken&#39;)</code></pre><p>(3).删除储存数据</p><pre><code> localStorage.removeItem(&#39;accessToken&#39;)</code></pre><p>(4).更改数据</p><pre><code>localStorage.setItem(&#39;accessToken&#39;, &#39;更改后&#39; + response.data.result.accessToken)</code></pre><p>使用时有两点需要注意过的地方：</p><p>localStorage在浏览器的隐私模式下面是不可读取的。<br>localStorage本质上是对字符串的读取，有json格式时需要JSON.stringify()转化为字符串。<br>localStorage不能被爬虫抓取到</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Front </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web Storage </tag>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> LocalStorage </tag>
             
         </tags>
       
@@ -409,9 +409,9 @@
             
             <tag> JavaScript </tag>
             
-            <tag> 笔记 </tag>
-            
             <tag> Cookie </tag>
+            
+            <tag> 笔记 </tag>
             
         </tags>
       
