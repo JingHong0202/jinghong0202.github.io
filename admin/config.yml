@@ -88,15 +88,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: tags-index.md
-        label: tags
-        file: source\tags\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: friends-index.md
         label: friends
         file: source\friends\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-index.md
+        label: 相册
+        file: source\galleries\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -106,9 +106,9 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-index.md
-        label: 相册
-        file: source\galleries\index.md
+      - name: tags-index.md
+        label: tags
+        file: source\tags\index.md
         editor:
           preview: false
         fields: *ref_0
