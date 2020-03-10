@@ -70,6 +70,12 @@ collections:
         editor:
           preview: false
         fields: *ref_0
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
+        editor:
+          preview: false
+        fields: *ref_0
       - name: about-index.md
         label: about
         file: source\about\index.md
@@ -82,9 +88,9 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: categories-index.md
-        label: categories
-        file: source\categories\index.md
+      - name: tags-index.md
+        label: tags
+        file: source\tags\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -94,21 +100,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-index.md
-        label: 相册
-        file: source\galleries\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: notes-index.md
         label: 笔记
         file: source\notes\index.md
         editor:
           preview: false
         fields: *ref_0
-      - name: tags-index.md
-        label: tags
-        file: source\tags\index.md
+      - name: galleries-index.md
+        label: 相册
+        file: source\galleries\index.md
         editor:
           preview: false
         fields: *ref_0
