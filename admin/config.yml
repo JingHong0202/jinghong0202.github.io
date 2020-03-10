@@ -76,12 +76,6 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: categories-index.md
-        label: categories
-        file: source\categories\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: contact-index.md
         label: contact
         file: source\contact\index.md
@@ -91,6 +85,12 @@ collections:
       - name: friends-index.md
         label: friends
         file: source\friends\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
         editor:
           preview: false
         fields: *ref_0
