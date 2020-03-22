@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jinghong.ml/"/>
-  <updated>2020-03-09T06:56:08.093Z</updated>
+  <updated>2020-03-22T06:07:56.678Z</updated>
   <id>https://www.jinghong.ml/</id>
   
   <author>
@@ -15,6 +15,97 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker入门</title>
+    <link href="https://www.jinghong.ml/posts/a01f.html"/>
+    <id>https://www.jinghong.ml/posts/a01f.html</id>
+    <published>2020-03-22T00:00:00.000Z</published>
+    <updated>2020-03-22T06:07:56.678Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;docker-基础入门&quot;&gt;&lt;a href=&quot;#docker-基础入门&quot; class=&quot;headerlink&quot; title=&quot;docker 基础入门&quot;&gt;&lt;/a&gt;docker 基础入门&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;参考链接:&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Operation" scheme="https://www.jinghong.ml/categories/Operation/"/>
+    
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="docker" scheme="https://www.jinghong.ml/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 基础</title>
+    <link href="https://www.jinghong.ml/posts/1db1.html"/>
+    <id>https://www.jinghong.ml/posts/1db1.html</id>
+    <published>2020-03-20T16:00:00.000Z</published>
+    <updated>2020-03-22T06:45:36.473Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-基础&quot;&gt;&lt;a href=&quot;#Linux-基础&quot; class=&quot;headerlink&quot; title=&quot;Linux 基础&quot;&gt;&lt;/a&gt;Linux 基础&lt;/h1&gt;&lt;p&gt;LAMP：Linux Apache MySQL PHP&lt;/p&gt;
+&lt;p&gt;LNMP：Linux
+        
+      
+    
+    </summary>
+    
+    
+      <category term="OS" scheme="https://www.jinghong.ml/categories/OS/"/>
+    
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="OS" scheme="https://www.jinghong.ml/tags/OS/"/>
+    
+      <category term="linux" scheme="https://www.jinghong.ml/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx</title>
+    <link href="https://www.jinghong.ml/posts/248b.html"/>
+    <id>https://www.jinghong.ml/posts/248b.html</id>
+    <published>2020-03-12T00:00:00.000Z</published>
+    <updated>2020-03-12T13:17:01.666Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;location&quot;&gt;&lt;a href=&quot;#location&quot; class=&quot;headerlink&quot; title=&quot;location&quot;&gt;&lt;/a&gt;location&lt;/h2&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Operation" scheme="https://www.jinghong.ml/categories/Operation/"/>
+    
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="nginx" scheme="https://www.jinghong.ml/tags/nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>Chrome Devtools</title>
@@ -308,6 +399,35 @@
   </entry>
   
   <entry>
+    <title>JS中Buffer数据详解</title>
+    <link href="https://www.jinghong.ml/posts/bd7.html"/>
+    <id>https://www.jinghong.ml/posts/bd7.html</id>
+    <published>2019-09-15T16:00:00.000Z</published>
+    <updated>2020-03-09T08:58:56.157Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Buffer" scheme="https://www.jinghong.ml/tags/Buffer/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WebAudio API</title>
     <link href="https://www.jinghong.ml/posts/3a3a.html"/>
     <id>https://www.jinghong.ml/posts/3a3a.html</id>
@@ -334,35 +454,6 @@
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
       <category term="webAudio API" scheme="https://www.jinghong.ml/tags/webAudio-API/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS中Buffer数据详解</title>
-    <link href="https://www.jinghong.ml/posts/bd7.html"/>
-    <id>https://www.jinghong.ml/posts/bd7.html</id>
-    <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-03-09T08:58:56.157Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
-    
-    
-      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
-    
-      <category term="Buffer" scheme="https://www.jinghong.ml/tags/Buffer/"/>
     
   </entry>
   
