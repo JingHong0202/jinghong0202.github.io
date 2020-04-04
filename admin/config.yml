@@ -1,9 +1,14 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: source/images
-public_folder: /images
+media_folder: medias/uploads
+public_folder: /public
 publish_mode: editorial_workflow
+site_url: 'https://www.jinghong.ml'
+display_url: 'https://www.jinghong.ml'
+logo_url: >-
+  https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io/medias/logo.png
+locale: zh-CN
 collections:
   - name: base_posts
     fields: &ref_0
@@ -70,15 +75,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: categories-index.md
-        label: categories
-        file: source\categories\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: about-index.md
         label: about
         file: source\about\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -94,15 +99,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-index.md
-        label: 相册
-        file: source\galleries\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: notes-index.md
         label: 笔记
         file: source\notes\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-index.md
+        label: 相册
+        file: source\galleries\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -112,15 +117,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-blog-index.md
-        label: blog
-        file: source\galleries\blog\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: galleries-private-index.md
         label: private
         file: source\galleries\private\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-blog-index.md
+        label: blog
+        file: source\galleries\blog\index.md
         editor:
           preview: false
         fields: *ref_0
