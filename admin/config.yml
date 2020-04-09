@@ -6,8 +6,6 @@ public_folder: /public
 publish_mode: editorial_workflow
 site_url: 'https://www.jinghong.ml'
 display_url: 'https://www.jinghong.ml'
-logo_url: >-
-  https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io/medias/logo.png
 locale: zh-CN
 collections:
   - name: base_posts
@@ -87,12 +85,6 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: friends-index.md
-        label: friends
-        file: source\friends\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: contact-index.md
         label: contact
         file: source\contact\index.md
@@ -117,15 +109,21 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-private-index.md
-        label: private
-        file: source\galleries\private\index.md
+      - name: friends-index.md
+        label: friends
+        file: source\friends\index.md
         editor:
           preview: false
         fields: *ref_0
       - name: galleries-blog-index.md
         label: blog
         file: source\galleries\blog\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-private-index.md
+        label: private
+        file: source\galleries\private\index.md
         editor:
           preview: false
         fields: *ref_0
