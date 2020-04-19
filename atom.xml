@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jinghong.ml/"/>
-  <updated>2020-04-04T16:53:22.018Z</updated>
+  <updated>2020-04-19T15:20:47.340Z</updated>
   <id>https://www.jinghong.ml/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git</title>
+    <link href="https://www.jinghong.ml/posts/629e.html"/>
+    <id>https://www.jinghong.ml/posts/629e.html</id>
+    <published>2020-04-12T16:00:00.000Z</published>
+    <updated>2020-04-19T15:20:47.340Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Git-基本使用&quot;&gt;&lt;a href=&quot;#Git-基本使用&quot; class=&quot;headerlink&quot; title=&quot;Git 基本使用&quot;&gt;&lt;/a&gt;Git 基本使用&lt;/h1&gt;&lt;p&gt;参考链接:&lt;br&gt;&lt;a href=&quot;https://git-scm.com/docs&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="VersionControl" scheme="https://www.jinghong.ml/categories/VersionControl/"/>
+    
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="git" scheme="https://www.jinghong.ml/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker入门</title>
@@ -161,11 +190,11 @@
       <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
     
     
-      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
-    
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
       <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
     
       <category term="IndexedDB" scheme="https://www.jinghong.ml/tags/IndexedDB/"/>
     
@@ -194,11 +223,11 @@
       <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
     
     
-      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
-    
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
       <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
     
       <category term="LocalStorage" scheme="https://www.jinghong.ml/tags/LocalStorage/"/>
     
@@ -265,9 +294,9 @@
       <category term="Back" scheme="https://www.jinghong.ml/categories/Back/"/>
     
     
-      <category term="Node" scheme="https://www.jinghong.ml/tags/Node/"/>
-    
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Node" scheme="https://www.jinghong.ml/tags/Node/"/>
     
       <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
@@ -341,6 +370,35 @@
   </entry>
   
   <entry>
+    <title>JS中Buffer数据详解</title>
+    <link href="https://www.jinghong.ml/posts/bd7.html"/>
+    <id>https://www.jinghong.ml/posts/bd7.html</id>
+    <published>2019-09-15T16:00:00.000Z</published>
+    <updated>2020-03-09T08:58:56.157Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Buffer" scheme="https://www.jinghong.ml/tags/Buffer/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WebAudio API</title>
     <link href="https://www.jinghong.ml/posts/3a3a.html"/>
     <id>https://www.jinghong.ml/posts/3a3a.html</id>
@@ -367,35 +425,6 @@
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
       <category term="webAudio API" scheme="https://www.jinghong.ml/tags/webAudio-API/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS中Buffer数据详解</title>
-    <link href="https://www.jinghong.ml/posts/bd7.html"/>
-    <id>https://www.jinghong.ml/posts/bd7.html</id>
-    <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-03-09T08:58:56.157Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
-    
-    
-      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
-    
-      <category term="Buffer" scheme="https://www.jinghong.ml/tags/Buffer/"/>
     
   </entry>
   
@@ -451,9 +480,9 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="ES6" scheme="https://www.jinghong.ml/tags/ES6/"/>
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -545,13 +574,13 @@
       <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
     
     
-      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
-    
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="Cookie" scheme="https://www.jinghong.ml/tags/Cookie/"/>
-    
       <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Web Storage" scheme="https://www.jinghong.ml/tags/Web-Storage/"/>
+    
+      <category term="Cookie" scheme="https://www.jinghong.ml/tags/Cookie/"/>
     
   </entry>
   

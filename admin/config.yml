@@ -97,15 +97,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-index.md
-        label: 相册
-        file: source\galleries\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: notes-index.md
         label: 笔记
         file: source\notes\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-index.md
+        label: 相册
+        file: source\galleries\index.md
         editor:
           preview: false
         fields: *ref_0
