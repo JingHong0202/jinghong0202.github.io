@@ -50,7 +50,7 @@
     <link href="https://www.jinghong.ml/posts/a01f.html"/>
     <id>https://www.jinghong.ml/posts/a01f.html</id>
     <published>2020-03-22T00:00:00.000Z</published>
-    <updated>2020-04-04T16:53:22.018Z</updated>
+    <updated>2020-04-20T06:29:45.433Z</updated>
     
     <summary type="html">
     
@@ -80,7 +80,7 @@
     <link href="https://www.jinghong.ml/posts/1db1.html"/>
     <id>https://www.jinghong.ml/posts/1db1.html</id>
     <published>2020-03-20T16:00:00.000Z</published>
-    <updated>2020-03-22T06:45:36.473Z</updated>
+    <updated>2020-04-20T06:29:43.136Z</updated>
     
     <summary type="html">
     
@@ -370,35 +370,6 @@
   </entry>
   
   <entry>
-    <title>JS中Buffer数据详解</title>
-    <link href="https://www.jinghong.ml/posts/bd7.html"/>
-    <id>https://www.jinghong.ml/posts/bd7.html</id>
-    <published>2019-09-15T16:00:00.000Z</published>
-    <updated>2020-03-09T08:58:56.157Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
-    
-    
-      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
-    
-      <category term="Buffer" scheme="https://www.jinghong.ml/tags/Buffer/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WebAudio API</title>
     <link href="https://www.jinghong.ml/posts/3a3a.html"/>
     <id>https://www.jinghong.ml/posts/3a3a.html</id>
@@ -425,6 +396,35 @@
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
       <category term="webAudio API" scheme="https://www.jinghong.ml/tags/webAudio-API/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS中Buffer数据详解</title>
+    <link href="https://www.jinghong.ml/posts/bd7.html"/>
+    <id>https://www.jinghong.ml/posts/bd7.html</id>
+    <published>2019-09-15T16:00:00.000Z</published>
+    <updated>2020-03-09T08:58:56.157Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;元数据处理&quot;&gt;&lt;a href=&quot;#元数据处理&quot; class=&quot;headerlink&quot; title=&quot;元数据处理&quot;&gt;&lt;/a&gt;元数据处理&lt;/h1&gt;&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Front" scheme="https://www.jinghong.ml/categories/Front/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
+    
+      <category term="Buffer" scheme="https://www.jinghong.ml/tags/Buffer/"/>
     
   </entry>
   
@@ -480,9 +480,9 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="ES6" scheme="https://www.jinghong.ml/tags/ES6/"/>
-    
       <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="ES6" scheme="https://www.jinghong.ml/tags/ES6/"/>
     
   </entry>
   
@@ -511,11 +511,11 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="Ajax" scheme="https://www.jinghong.ml/tags/Ajax/"/>
     
       <category term="CORS" scheme="https://www.jinghong.ml/tags/CORS/"/>
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   

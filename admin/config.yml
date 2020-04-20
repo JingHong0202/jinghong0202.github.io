@@ -73,15 +73,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: about-index.md
-        label: about
-        file: source\about\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: categories-index.md
         label: categories
         file: source\categories\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: about-index.md
+        label: about
+        file: source\about\index.md
         editor:
           preview: false
         fields: *ref_0
