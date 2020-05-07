@@ -73,9 +73,9 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: categories-index.md
-        label: categories
-        file: source\categories\index.md
+      - name: friends-index.md
+        label: friends
+        file: source\friends\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -85,15 +85,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: contact-index.md
-        label: contact
-        file: source\contact\index.md
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
         editor:
           preview: false
         fields: *ref_0
-      - name: friends-index.md
-        label: friends
-        file: source\friends\index.md
+      - name: contact-index.md
+        label: contact
+        file: source\contact\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -115,15 +115,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-blog-index.md
-        label: blog
-        file: source\galleries\blog\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: galleries-private-index.md
         label: private
         file: source\galleries\private\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-blog-index.md
+        label: blog
+        file: source\galleries\blog\index.md
         editor:
           preview: false
         fields: *ref_0
