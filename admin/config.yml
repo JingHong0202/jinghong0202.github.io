@@ -73,15 +73,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: friends-index.md
-        label: friends
-        file: source\friends\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: about-index.md
         label: about
         file: source\about\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: contact-index.md
+        label: contact
+        file: source\contact\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -91,9 +91,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: contact-index.md
-        label: contact
-        file: source\contact\index.md
+      - name: friends-index.md
+        label: friends
+        file: source\friends\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: mindmap-index.md
+        label: 思维导图
+        file: source\mindmap\index.md
         editor:
           preview: false
         fields: *ref_0
@@ -115,15 +121,15 @@ collections:
         editor:
           preview: false
         fields: *ref_0
-      - name: galleries-private-index.md
-        label: private
-        file: source\galleries\private\index.md
-        editor:
-          preview: false
-        fields: *ref_0
       - name: galleries-blog-index.md
         label: blog
         file: source\galleries\blog\index.md
+        editor:
+          preview: false
+        fields: *ref_0
+      - name: galleries-private-index.md
+        label: private
+        file: source\galleries\private\index.md
         editor:
           preview: false
         fields: *ref_0

@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>Mysql入门</title>
+      <title>Mysql</title>
       <link href="/posts/e8e0.html"/>
       <url>/posts/e8e0.html</url>
       
@@ -58,7 +58,7 @@
     
     
     <entry>
-      <title>Docker入门</title>
+      <title>Docker</title>
       <link href="/posts/a01f.html"/>
       <url>/posts/a01f.html</url>
       
@@ -455,9 +455,9 @@
             
             <tag> JavaScript </tag>
             
-            <tag> 笔记 </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -484,11 +484,11 @@
             
             <tag> JavaScript </tag>
             
+            <tag> 笔记 </tag>
+            
             <tag> Ajax </tag>
             
             <tag> CORS </tag>
-            
-            <tag> 笔记 </tag>
             
         </tags>
       
