@@ -509,9 +509,9 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="ES6" scheme="https://www.jinghong.ml/tags/ES6/"/>
-    
       <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="ES6" scheme="https://www.jinghong.ml/tags/ES6/"/>
     
   </entry>
   
@@ -540,11 +540,11 @@
     
       <category term="JavaScript" scheme="https://www.jinghong.ml/tags/JavaScript/"/>
     
-      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="Ajax" scheme="https://www.jinghong.ml/tags/Ajax/"/>
     
       <category term="CORS" scheme="https://www.jinghong.ml/tags/CORS/"/>
+    
+      <category term="笔记" scheme="https://www.jinghong.ml/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
