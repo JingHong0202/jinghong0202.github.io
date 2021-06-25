@@ -1,0 +1,590 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="HCloud DEMO 总结, HTML,CSS,JavaScript,JQuery,Vue,Node"><meta name="description" content="毕业设计总结
+HCloud 是一个全栈 JavaScript 开发的项目也是一个从零开始的项目，前端采用的是 uni-app 跨端框架，后端 EggJS，前端在 uni-app nvue (weex) 纯原生渲染技术的加持下，功能和流畅度方"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="baidu-site-verification" content="LOg3u41Vsp"><meta name="sogou_site_verification" content="r2b9FKw94y"><title>HCloud DEMO 总结 | Jing Hong</title><link rel="icon" type="image/png" href="/medias/logo.png"><link rel="stylesheet" href="/libs/awesome/css/all.css"><link rel="stylesheet" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/libs/aos/aos.css"><link rel="stylesheet" href="/libs/animate/animate.min.css"><link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/css/matery.css"><script src="/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Jing Hong" type="application/atom+xml"></head><body><div class="load-mask"><div class="load"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" alt="loading"></div></div><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><div style="white-space:nowrap"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="/medias/avatar.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">Jing Hong</span></div></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/notes" class="waves-effect waves-light"><i class="fas fa-book"></i> <span>笔记</span><i class="fas fa-chevron-down" aria-hidden="true"></i></a><ul class="sub-nav menus_item_child"><li><a href="/notes"><i class="fas fa-book" style="margin-top:-20px"></i> <span>笔记</span></a></li><li><a href="/mindmap"><i class="fas fa-bell" style="margin-top:-20px"></i> <span>思维导图</span></a></li></ul></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark"></i> <span>分类</span><i class="fas fa-chevron-down" aria-hidden="true"></i></a><ul class="sub-nav menus_item_child"><li><a href="/categories"><i class="fas fa-bookmark" style="margin-top:-20px"></i> <span>文章分类</span></a></li><li><a href="/tags"><i class="fas fa-tags" style="margin-top:-20px"></i> <span>标签</span></a></li><li><a href="/archives"><i class="fas fa-archive" style="margin-top:-20px"></i> <span>归档</span></a></li></ul></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-user-circle"></i> <span>关于</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book"></i> <span>友情链接</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/galleries" class="waves-effect waves-light"><i class="fas fa-image"></i> <span>相册</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/admin" class="waves-effect waves-light"><i class="fas fa-lock"></i> <span>管理</span><i class="fas fa-chevron-down" aria-hidden="true"></i></a><ul class="sub-nav menus_item_child"><li><a href="/admin"><i class="fas fa-newspaper" style="margin-top:-20px"></i> <span>文章管理</span></a></li><li><a target="_blank" rel="noopener" href="https://email.jinghong.ml"><i class="fas fa-comments" style="margin-top:-20px"></i> <span>评论管理</span></a></li><li><a target="_blank" rel="noopener" href="http://aria2.jinghong.ml"><i class="fa fa-download" style="margin-top:-20px"></i> <span>aria2</span></a></li></ul></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="/medias/avatar.jpg" data-original="/medias/avatar.jpg" class="logo-img circle responsive-img"><div class="logo-name">Jing Hong</div><div class="logo-desc">编程袁一只！专注编程！！！</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="javascript:;"><i class="fa-fw fas fa-book"></i> 笔记<span class="m-icon"><i class="fas fa-chevron-right"></i></span></a><ul><li><a href="/notes" style="margin-left:75px" ;><i class="fa fas fa-book" style="position:absolute;left:50px"></i> <span>笔记</span></a></li><li><a href="/mindmap" style="margin-left:75px" ;><i class="fa fas fa-bell" style="position:absolute;left:50px"></i> <span>思维导图</span></a></li></ul></li><li class="m-nav-item"><a href="javascript:;"><i class="fa-fw fas fa-bookmark"></i> 分类<span class="m-icon"><i class="fas fa-chevron-right"></i></span></a><ul><li><a href="/categories" style="margin-left:75px" ;><i class="fa fas fa-bookmark" style="position:absolute;left:50px"></i> <span>文章分类</span></a></li><li><a href="/tags" style="margin-left:75px" ;><i class="fa fas fa-tags" style="position:absolute;left:50px"></i> <span>标签</span></a></li><li><a href="/archives" style="margin-left:75px" ;><i class="fa fas fa-archive" style="position:absolute;left:50px"></i> <span>归档</span></a></li></ul></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li><li class="m-nav-item"><a href="/galleries" class="waves-effect waves-light"><i class="fa-fw fas fa-image"></i> 相册</a></li><li class="m-nav-item"><a href="javascript:;"><i class="fa-fw fas fa-lock"></i> 管理<span class="m-icon"><i class="fas fa-chevron-right"></i></span></a><ul><li><a href="/admin" style="margin-left:75px" ;><i class="fa fas fa-newspaper" style="position:absolute;left:50px"></i> <span>文章管理</span></a></li><li><a target="_blank" rel="noopener" href="https://email.jinghong.ml" style="margin-left:75px" ;><i class="fa fas fa-comments" style="position:absolute;left:50px"></i> <span>评论管理</span></a></li><li><a target="_blank" rel="noopener" href="http://aria2.jinghong.ml" style="margin-left:75px" ;><i class="fa fa fa-download" style="position:absolute;left:50px"></i> <span>aria2</span></a></li></ul></li></ul></div></div></nav></header><link rel="stylesheet" href="/libs/prism/prism.css"><script src="/libs/cryptojs/crypto-js.min.js"></script><script>;(function () {
+    let pwd = ''
+    if (pwd && pwd.length > 0) {
+      if (
+        pwd !==
+        CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(
+          CryptoJS.enc.Hex
+        )
+      ) {
+        alert('密码错误，将返回主页！')
+        location.href = '/'
+      }
+    }
+  })()</script><div class="bg-cover bg-cover2 pd-header post-cover" style="background-image:url(/medias/featureimages/6.jpg)"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352Z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" style="--i:1"/><use xlink:href="#gentle-wave" x="48" y="9" style="--i:2"/><use xlink:href="#gentle-wave" x="48" y="12" style="--i:3"/><use xlink:href="#gentle-wave" x="48" y="15" style="--i:4"/></g></svg><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">HCloud DEMO 总结</h1></div></div></div></div></div><main class="container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/uni-app/"><span class="chip bg-color">uni-app</span></a> <a href="/tags/egg/"><span class="chip bg-color">egg</span></a> <a href="/tags/vue/"><span class="chip bg-color">vue</span></a> <a href="/tags/native/"><span class="chip bg-color">native</span></a> <a href="/tags/weex/"><span class="chip bg-color">weex</span></a> <a href="/tags/nvue/"><span class="chip bg-color">nvue</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/demo/" class="post-category">demo</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2021-05-24</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 4.2k</div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="毕业设计总结"><a href="#毕业设计总结" class="headerlink" title="毕业设计总结"></a>毕业设计总结</h1><blockquote><p>HCloud 是一个全栈 JavaScript 开发的项目也是一个从零开始的项目，前端采用的是 uni-app 跨端框架，后端 EggJS，前端在 uni-app nvue (weex) 纯原生渲染技术的加持下，功能和流畅度方面和原生 app 差距不大。</p></blockquote><h2 id="项目-CODE-和成品链接"><a href="#项目-CODE-和成品链接" class="headerlink" title="项目 CODE 和成品链接:"></a>项目 CODE 和成品链接:</h2><blockquote><p><a target="_blank" rel="noopener" href="https://gitee.com/jinghong0919/hcloud">前端</a> <a target="_blank" rel="noopener" href="https://gitee.com/jinghong0919/Hcloud_back">后端</a> <a target="_blank" rel="noopener" href="https://hcloud.jinghong.ml">展览页</a></p></blockquote><h2 id="功能思维导图"><a href="#功能思维导图" class="headerlink" title="功能思维导图"></a>功能思维导图</h2><blockquote><p>空格鼠标拖动移动视图，滚轮放大放小</p></blockquote><p><span class="top-title">移动端不支持思维导图</span></p><blockquote class="pullquote mindmap mindmap-lg"><ul><li><a target="_blank" rel="noopener" href="https://hcloud.jinghong.ml">Hcloud</a><ul><li>登录/注册/找回<ul><li>账号密码登录</li><li>短信登录/注册/找回</li></ul></li><li>首页<ul><li>最近动态列表<ul><li>预览</li><li>长按进入选择模式(可单/多选)<ul><li>打开所在目录</li><li>下载</li><li>预览</li></ul></li></ul></li><li>搜索文件</li><li>上传文件</li><li>传输列表<ul><li>点击切换</li><li>已完成<ul><li>上传<ul><li>跳转到所在目录</li></ul></li><li>下载<ul><li>打开文件</li></ul></li></ul></li><li>长按进入选择模式(可单/多选)<ul><li>继续</li><li>暂停</li><li>取消</li></ul></li></ul></li></ul></li><li>文件列表<ul><li>查找文件(同首页相同,两个入口)</li><li>点击文件预览</li><li>视图规则(过滤、排序、切换展示模式)</li><li>长按进入选择模式(可单/多选)<ul><li>重命名</li><li>移动</li><li>下载</li><li>分享</li><li>删除</li></ul></li></ul></li><li>相册<ul><li>九宫格布局</li><li>右侧上下拖动快速定位到所选日期</li><li>长按进入选择模式(和文件页相同)</li><li>点击预览</li></ul></li><li>个人中心<ul><li>用户基本信息<ul><li>点击进入用户详情</li></ul></li><li>空间使用情况</li><li>分享管理页面<ul><li>点击进入分享详情页<ul><li>查看文件</li><li>取消分享</li><li>设置提取码</li><li>复制链接</li></ul></li><li>长按进入选择模式(可单/多选)<ul><li>取消分享</li><li>复制链接</li></ul></li></ul></li><li>回收站页面<ul><li>点击/长按进入选择模式<ul><li>恢复文件</li><li>彻底删除文件</li></ul></li></ul></li><li>关于页面</li><li>二维码扫描</li><li>退出登录</li></ul></li><li>添加<ul><li>扫一扫</li><li>新建文件夹</li><li>本地文件上传</li><li>相册文件上传</li><li>解析分享链接</li></ul></li></ul></li><li>fresh-purple</li><li>filetree</li></ul></blockquote><h2 id="知识点-amp-难点总结"><a href="#知识点-amp-难点总结" class="headerlink" title="知识点&amp;难点总结"></a>知识点&amp;难点总结</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><blockquote><p>本项目前端技术栈使用的是 Uni-app Weex Native Vue Vuex Scss 等,是一个纯 NVue 开发的 APP</p></blockquote><h4 id="全局弹窗"><a href="#全局弹窗" class="headerlink" title="全局弹窗"></a>全局弹窗</h4><blockquote><p>在 NVUE 中，由于有些组件是 webView 渲染，有些则是原生渲染，这两种的的存在就造成了 webView 的组件无法覆盖原生渲染的组件，官方虽说在纯 NVUE 的渲染页面不存在覆盖不了的问题，但是导航栏和 tabbar 等原生组件在纯 NVUE 渲染的情况下依旧无法覆盖</p></blockquote><p>解决覆盖问题的方法有多个 如下：</p><ul><li>SubNVue(盖上一个新的 webView 窗口,缺点： 使用方式有所限制,扩展性不够,只支持 APP 端)<br><a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/article/35948">参考链接</a></li><li>自定义导航栏和 tabbar(缺点：页面跳转性能方面变差,因为只能改成组件路由的切换模式来跳转页面)</li><li>新健一个背景透明的 Nvue 页面(能覆盖所有组件但是只支持 APP 端)</li><li>自行绘制原生控件(利用官方的 H5PLUS API 绘制，自定义强，但交互、动画等效果比较难实现)</li></ul><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"style"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"navigationStyle"</span><span class="token operator">:</span> <span class="token string">"custom"</span><span class="token punctuation">,</span>
+    <span class="token property">"backgroundColor"</span><span class="token operator">:</span> <span class="token string">"transparent"</span><span class="token punctuation">,</span>
+    <span class="token property">"app-plus"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"transparent"</span><span class="token punctuation">,</span>
+      <span class="token property">"titleNView"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>在布局方面，nvue 只支持 flex 弹性布局，px/rpx 单位，不支持百分比，并且也不支持 DOM 操作，局限性比较大，以下是传统布局在 nvue 中的实现方式</p></blockquote><h4 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h4><blockquote><p>在 nvue 中自带 display:flex css 设置，不用手动添加该样式，默认 column 垂直方向，手动设置可覆盖，也可修改全局默认设置 manifest.json -&gt; app-plus -&gt; nvue -&gt; flex-direction 节点下修改</p></blockquote><pre class="line-numbers language-json" data-language="json"><div class="caption"><span>manifest.json</span><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/nvue-outline?id">link</a></div><code class="language-json"><span class="token property">"nvue"</span> <span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"flex-direction"</span> <span class="token operator">:</span> <span class="token string">"row"</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h4 id="撑满屏幕-w100-h100"><a href="#撑满屏幕-w100-h100" class="headerlink" title="撑满屏幕/w100% h100%"></a>撑满屏幕/w100% h100%</h4><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">// 1
+view</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">// 2
+view</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">//3  在uni-app中，750rpx即可以当做 width:100% 来使用，但在宽大于一定程度后，不在自动撑满，该方案只能自动撑满宽度，高度只能自行获取屏幕高度设置
+view</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 750rpx<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>3 参考链接:</p><ul><li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/adapt?id=_3-%e5%86%85%e5%ae%b9%e7%bc%a9%e6%94%be%e6%8b%89%e4%bc%b8%e7%9a%84%e5%a4%84%e7%90%86">内容缩放拉伸的处理</a></li><li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/nvue-outline?id=%e7%bc%96%e8%af%91%e6%a8%a1%e5%bc%8f">编译模式</a></li><li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/frame?id=%e5%b0%ba%e5%af%b8%e5%8d%95%e4%bd%8d">尺寸单位</a></li></ul><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>js动态获取屏幕宽高</span><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/api/system/info">link</a></div><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">&#123;</span> windowWidth<span class="token punctuation">,</span> windowHeight<span class="token punctuation">,</span> navigationBarHeight<span class="token punctuation">,</span> statusBarHeight <span class="token punctuation">&#125;</span> <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">getSystemInfoSync</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 屏幕高度 = 原生NavigationBar高度（含状态栏高度）+ 可使用窗口高度 + 原生TabBar高度</span>
+<span class="token comment">// windowHeight不包含NavigationBar和TabBar的高度</span>
+<span class="token comment">// H5端，windowTop等于NavigationBar高度，windowBottom等于TabBar高度</span>
+<span class="token comment">// App端，windowTop等于透明状态NavigationBar高度，windowBottom等于透明状态TabBar高度</span>
+<span class="token comment">// 高度相关信息，要放在 onReady 里获取</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/frame?id=%e5%85%a8%e5%b1%80%e6%a0%b7%e5%bc%8f%e4%b8%8e%e5%b1%80%e9%83%a8%e6%a0%b7%e5%bc%8f">获取状态栏、导航栏高度信息等参考链接</a></p><h4 id="自定义字体图标导入"><a href="#自定义字体图标导入" class="headerlink" title="自定义字体图标导入"></a>自定义字体图标导入</h4><blockquote><p>在 webView 中，可以使用传统的方式导入字体图标，但在 Nvue 中传统的方式无效，得使用官方提供的<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/api/extend/native-plugin?id=requirenativeplugin">插件 api</a> 导入，以下是导入代码 <a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/nvue-api?id=addrule">参考链接</a></p></blockquote><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> domModule <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">requireNativePlugin</span><span class="token punctuation">(</span><span class="token string">'dom'</span><span class="token punctuation">)</span>
+domModule<span class="token punctuation">.</span><span class="token function">addRule</span><span class="token punctuation">(</span><span class="token string">'fontFace'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+  fontFamily<span class="token operator">:</span> <span class="token string">'iconfont'</span><span class="token punctuation">,</span>
+  src<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">url('file:/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>plus<span class="token punctuation">.</span>io<span class="token punctuation">.</span><span class="token function">convertLocalFileSystemURL</span><span class="token punctuation">(</span><span class="token string">'_www/static/icon/iconfont/iconfont.ttf'</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">')</span><span class="token template-punctuation string">`</span></span> <span class="token comment">// android 读取本地文件路径，通常得加上前缀 file:///</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h4><blockquote><p>在 APP 端, 动画的实现方式也有所限制和不同</p></blockquote><table><thead><tr><th align="center">技术关键词</th><th align="center">transition</th><th align="center">@keyframes</th><th align="center"><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/nvue-api?id=animation">plugin-animation</a></th><th align="center"><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/nvue-api?id=nvue-%e9%87%8c%e4%bd%bf%e7%94%a8-bindingx">plugin-bindingx</a></th><th align="center"><a target="_blank" rel="noopener" href="https://www.yuque.com/lottie">lottie</a></th></tr></thead><tbody><tr><td align="center">支持性</td><td align="center">YES</td><td align="center">NO</td><td align="center">YES</td><td align="center">YES</td><td align="center">YES</td></tr></tbody></table><blockquote><p>以下是本项目对 plugin-animation 的封装和调用方式</p></blockquote><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>util/animation.js</span></div><code class="language-js"><span class="token keyword">const</span> animation <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">requireNativePlugin</span><span class="token punctuation">(</span><span class="token string">'animation'</span><span class="token punctuation">)</span>
+<span class="token comment">// 对单</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span><span class="token parameter">target<span class="token punctuation">,</span> options</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>target <span class="token operator">||</span> <span class="token operator">!</span>options<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">'params error'</span><span class="token punctuation">)</span>
+    animation<span class="token punctuation">.</span><span class="token function">transition</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> options<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">// 对群</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">animates</span><span class="token punctuation">(</span><span class="token parameter">multiple</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>multiple<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'[object Array]'</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'Not an Array'</span><span class="token punctuation">)</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> multiple<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">await</span> <span class="token function">animate</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>target<span class="token punctuation">,</span> item<span class="token punctuation">.</span>options<span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>common/js/mixins/dragpanel.js</span></div><code class="language-js"><span class="token function">animate</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'ctx'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+  styles<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    transform<span class="token operator">:</span> <span class="token string">'translateY(100%)'</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  duration<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  timingFunction<span class="token operator">:</span> <span class="token string">'ease'</span><span class="token punctuation">,</span>
+  delay<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  needLayout<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  uni<span class="token punctuation">.</span><span class="token function">navigateBack</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="交互"><a href="#交互" class="headerlink" title="交互"></a>交互</h4><blockquote><p>一般交互动画应用场景如： 点击 拖动 元素增删改查过渡 初始化等等… , 在交互上做一些功夫能使整个 APP 无论是视觉上还是体验上都有很好的感光提升，能加强引导用户操作，也能在页面数据还未加载完成时做一个替代品，但想要实现并落地一个交互动画还是比较困难的(对于全部都由我自己来做 o(╥﹏╥)o 的酷比来说)， 因为要考虑之间融不融洽、过渡是否顺畅等等视觉感官上的设计，还要考虑这个交互的动画实现成本，不能太占资源而导致整个 app 卡顿</p></blockquote><blockquote><p>在 uni-app 中,使用传统的 JS 方式来做交互的话，性能会比较差，为什么呢？ 这里引用官方文档的话： 逻辑层和视图层分离的。此时会产生两层通信成本。比如拖动视图层的元素，如果在逻辑层不停接收事件，因为通信损耗会产生不顺滑的体验，因而在本项目中我采用的是 Weex 提供的 <a target="_blank" rel="noopener" href="https://alibaba.github.io/bindingx/guide/cn_introduce">Bindingx 插件</a> 来做交互动画<br><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/nvue-api?id=nvue-%e9%87%8c%e4%bd%bf%e7%94%a8-bindingx">uni-app 官方说明</a> &gt; <a target="_blank" rel="noopener" href="https://alibaba.github.io/bindingx/guide/cn_introduce">Bindingx 官网文档</a> &gt; <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000013617385">Weex BindingX 尝鲜</a></p></blockquote><h5 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h5><p><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/5f98b7.png" alt="index"></p><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>pages/tabbar/index/index.nvue</span></div><code class="language-js"><span class="token function">bindingx</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  eventType<span class="token operator">:</span> <span class="token string">'scroll'</span><span class="token punctuation">,</span>
+  <span class="token comment">//  容器</span>
+  anchor<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token comment">//  要执行动画的元素</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'top'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token comment">//  要执行动画的属性</span>
+      property<span class="token operator">:</span> <span class="token string">'opacity'</span><span class="token punctuation">,</span>
+      <span class="token comment">//  每次执行的运算表达式</span>
+      expression<span class="token operator">:</span> <span class="token string">'1-y/'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>dynamicTop
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="我的"><a href="#我的" class="headerlink" title="我的"></a>我的</h5><p><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/e38ee0.png" alt="my"></p><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>pages/tabbar/personal/personal.nvue</span></div><code class="language-js"><span class="token keyword">let</span> circleY_targetY <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span>
+    size<span class="token punctuation">.</span>top <span class="token operator">+</span>
+      <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight <span class="token operator">-</span> statusBarHeight<span class="token punctuation">)</span> <span class="token operator">+</span>
+      <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight <span class="token operator">-</span> statusBarHeight <span class="token operator">-</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.6</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+  qs_targetY <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span>
+    size<span class="token punctuation">.</span>top <span class="token operator">+</span>
+      <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight <span class="token operator">-</span> statusBarHeight<span class="token punctuation">)</span> <span class="token operator">+</span>
+      <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight <span class="token operator">-</span> statusBarHeight <span class="token operator">-</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.9</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+  list_header_height <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> userOpacity <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">max(1-min(y,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">,0)</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  navOpacity <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">min(y,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span>list_header_height <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>navHeight<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span>
+    list_header_height <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>navHeight
+  <span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  userY <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">y></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">?-500:0</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  circleY <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">(0-min(y,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)*</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>circleY_targetY<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  circleX <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">(0-min(y,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)*</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  circleScale <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">(y-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)&lt;=0?1:(1-min(.4,1*(y-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">))</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  qsY <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">(0-min(y,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)*</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>qs_targetY<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  qsX <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">min(y,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">*</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  qsScale <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">(y-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)&lt;=0?1:(1-min(.1,1*(y-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>navHeight<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">)/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list_header_height<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">))</span><span class="token template-punctuation string">`</span></span>
+<span class="token function">bindingx</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  eventType<span class="token operator">:</span> <span class="token string">'scroll'</span><span class="token punctuation">,</span>
+  anchor<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'personal'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  config<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    transformOrigin<span class="token operator">:</span> <span class="token string">'center'</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'nav'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'opacity'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> navOpacity
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'user'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'opacity'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> userOpacity
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'user'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.translateY'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> userY
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'qs'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.translateY'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> qsY
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'qs'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.scale'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> qsScale
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'qs'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.translateX'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> qsX
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'circle'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.translateY'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> circleY
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'circle'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.translateX'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> circleX
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      element<span class="token operator">:</span> <span class="token function">getEl</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'circle'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      property<span class="token operator">:</span> <span class="token string">'transform.scale'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> circleScale
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="拖动式抽屉组件"><a href="#拖动式抽屉组件" class="headerlink" title="拖动式抽屉组件"></a>拖动式抽屉组件</h5><p><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/267822.png" alt="dragComponent"></p><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>components/custom/custom-dragPanel/custom-dragPanel.vue</span></div><code class="language-js"><span class="token function">bindingx</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>
+  <span class="token punctuation">&#123;</span>
+    eventType<span class="token operator">:</span> <span class="token string">'pan'</span><span class="token punctuation">,</span>
+    anchor<span class="token operator">:</span> el<span class="token punctuation">,</span>
+    props<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">&#123;</span>
+        element<span class="token operator">:</span> el<span class="token punctuation">,</span>
+        property<span class="token operator">:</span> <span class="token string">'transform.translateY'</span><span class="token punctuation">,</span>
+        expression<span class="token operator">:</span> <span class="token string">'max(y+'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">+</span> <span class="token string">',0)'</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token parameter">e</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>state <span class="token operator">===</span> <span class="token string">'end'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>autoTop<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>deltaY <span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctxHeight <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">back</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#125;</span>
+      <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">+=</span> e<span class="token punctuation">.</span>deltaY
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctxHeight <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">back</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="绘制原生导航栏"><a href="#绘制原生导航栏" class="headerlink" title="绘制原生导航栏"></a>绘制原生导航栏</h4><blockquote><p>在本项目中，长按选择文件会显示当前已选的个数和取消、全选按钮的导航栏窗口，并且会覆盖原生自带的窗口，实现了类似百度云盘等 app 选择模式下的同等 UI，采用官方提供的<a target="_blank" rel="noopener" href="http://www.html5plus.org/doc/zh_cn/nativeobj.html">H5PLUS -&gt; nativeObj 原生控件绘制</a> API 绘制,这里也涉及到了 JS 和 native 之间的通信</p></blockquote><pre class="line-numbers language-js" data-language="js"><div class="caption"><span>util/pages.js</span></div><code class="language-js"><span class="token keyword">function</span> <span class="token function">createSelectNav</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// 获取坐标</span>
+  <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> statusBarHeight<span class="token punctuation">,</span> windowWidth <span class="token punctuation">&#125;</span> <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">getSystemInfoSync</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token comment">// 初始化控件参数</span>
+  <span class="token keyword">let</span> nav <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">plus<span class="token punctuation">.</span>nativeObj<span class="token punctuation">.</span>View</span><span class="token punctuation">(</span><span class="token string">'nav'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+    top<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>statusBarHeight<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">px</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    left<span class="token operator">:</span> <span class="token string">'0px'</span><span class="token punctuation">,</span>
+    height<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">44px</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    width<span class="token operator">:</span> <span class="token string">'100%'</span><span class="token punctuation">,</span>
+    backgroundColor<span class="token operator">:</span> <span class="token string">'#4070ff'</span><span class="token punctuation">,</span>
+    statusbar<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      background<span class="token operator">:</span> <span class="token string">'#4070ff'</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token comment">//  绘制导航栏里的的内容</span>
+  nav<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      tag<span class="token operator">:</span> <span class="token string">'font'</span><span class="token punctuation">,</span>
+      id<span class="token operator">:</span> <span class="token string">'title'</span><span class="token punctuation">,</span>
+      text<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      textStyles<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        size<span class="token operator">:</span> <span class="token string">'16px'</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'white'</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+      position<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        bottom<span class="token operator">:</span> <span class="token string">'0px'</span><span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token string">'44px'</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      tag<span class="token operator">:</span> <span class="token string">'font'</span><span class="token punctuation">,</span>
+      id<span class="token operator">:</span> <span class="token string">'cancel'</span><span class="token punctuation">,</span>
+      text<span class="token operator">:</span> <span class="token string">'取消'</span><span class="token punctuation">,</span>
+      textStyles<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        size<span class="token operator">:</span> <span class="token string">'16px'</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'white'</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+      position<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        left<span class="token operator">:</span> <span class="token string">'43%'</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      tag<span class="token operator">:</span> <span class="token string">'font'</span><span class="token punctuation">,</span>
+      id<span class="token operator">:</span> <span class="token string">'all'</span><span class="token punctuation">,</span>
+      text<span class="token operator">:</span> <span class="token string">'全选'</span><span class="token punctuation">,</span>
+      textStyles<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        size<span class="token operator">:</span> <span class="token string">'16px'</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'white'</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+      position<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        right<span class="token operator">:</span> <span class="token string">'84%'</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token comment">//  绑定点击事件</span>
+  nav<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'touchstart'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> itemWidth <span class="token operator">=</span> windowWidth <span class="token operator">*</span> <span class="token number">0.2</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>screenX <span class="token operator">&lt;</span> itemWidth<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      uni<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'select-all'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>screenX <span class="token operator">></span> windowWidth <span class="token operator">-</span> itemWidth<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      uni<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'cancel-all'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> nav
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="前端直传-OSS"><a href="#前端直传-OSS" class="headerlink" title="前端直传 OSS"></a>前端直传 OSS</h4><blockquote><p><a href="#direct">这部分流程已放到后端，请参阅后端部分</a></p></blockquote><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><blockquote><p>本项目后端技术栈使用的是 EggJS Mysql Redis Sequelize AliYun_SMS JWT，文件存储在 AliYun_OSS,文件上传下载传输采用的是直传 OSS 的方式，省掉了中转到 OSS 的流量</p></blockquote><blockquote><p>Tips: 手机端视窗太小不适合 mermaid 图展示，看不太清楚,请到 pc 端查看</p></blockquote><h4 id="用户登录-注册-找回"><a href="#用户登录-注册-找回" class="headerlink" title="用户登录/注册/找回"></a>用户登录/注册/找回</h4><blockquote><p>在本项目中，用户注册找回等操作是采用短信验证方式进行限制的，技术栈方面 使用了 redis 替代了 session、 jwt 生成 token、 接入了阿里云大鱼短信验证</p></blockquote><blockquote><p>用户操作除了账号密码登录不需要短信验证外，其他情况都需要，整个过程如下：</p></blockquote><pre class="mermaid">graph TB
+    A[注册/找回/登录 流程] -->|发送短信| C[用户是否存在?参数是否正确?]
+    C -->|验证通过| D[发出短信]
+    C -->|验证失败| E[返回错误提示]
+    D -->|用户收到短信,提交验证码|F[短信验证]
+    F --> G[是否通过?]
+    G --> |通过,跳转到注册或找回密码页面| H[表单页面]
+    G --> |短信登录| K[登录成功,清除登录错误记录]
+    G --> |失败| E
+    H --> |提交表单,验证参数是否合法|I[是否通过?]
+    I --> |通过| J[注册/找回成功]
+    I --> |失败| H
+    A --> |账号密码登录| L[校验账号信息]
+    L --> |通过| K
+    L --> |失败| Z[记录账号错误次数,达到一定量的时候自动锁定,需等30分钟解锁]</pre><h4 id="文件管理-CURD"><a href="#文件管理-CURD" class="headerlink" title="文件管理 CURD"></a>文件管理 CURD</h4><blockquote><p>文件管理是本项目中的难点之一，也是比较核心的一部分，下面一部分一部分讲解</p></blockquote><h5 id="请求授权流程"><a href="#请求授权流程" class="headerlink" title="请求授权流程"></a>请求授权流程</h5><pre class="mermaid">graph LR
+    A[请求授权流程] -->|携带token| C[校验token]
+    C -->|校验通过| B[利用token获取用户信息]
+    C -->|校验失败| E[返回错误提示]
+    B --> E1[参数校验]
+    E1 --> E2[通过]
+    E1 --> E
+    E2 --> END[响应成功]</pre><h5 id="文件存储结构"><a href="#文件存储结构" class="headerlink" title="文件存储结构"></a>文件存储结构</h5><pre class="mermaid">stateDiagram-v2
+    文件夹
+    state 文件夹 {
+        子文件夹
+        state 子文件夹 {
+          文件4
+          ...子文件1
+          子文件夹2
+          state 子文件夹2 {
+            子文件2
+          }
+           子文件夹2
+          state 子文件夹3 {
+            子文件3
+            ...N
+          }
+        }
+        ...子文件
+    }</pre><blockquote><p>由上面的 mermaid（状态图）可以看出，文件夹里有子文件和子文件夹，子文件夹里在有子文件，无限嵌套,这种结构必然得加上递归的方式来进行增删改查处理，之间的逻辑会交纵错杂，经常尝生一条线好了另一条线坏了的情况</p></blockquote><blockquote><p>在本项目中，文件的结构和文件夹由 mysql 来模拟，使用到了自联查询和 CTE 递归查询，目前这种方案算不上好，但能实现需求，递归查询非常耗性能，文件存储在阿里云 OSS 上，速度方面可以跑满带宽</p></blockquote><h5 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a><span id="direct">文件上传</span></h5><blockquote><p>在本项目，文件上传流程： 前端授权并直传 OSS 完成后,OSS 会携带秘钥请求服务端，服务端验证后入库，完成文件上传</p></blockquote><pre class="mermaid">sequenceDiagram
+    autonumber
+    前端 ->> 服务端: 请求签名授权
+    服务端 ->> 服务端: 生成唯一签名
+    服务端 ->> 前端: 完成签名响应
+    前端 -->> OSS: 携带签名,前端直传OSS
+    OSS ->> 服务端: 直传完成后，携带签名,请求服务端回调接口
+    服务端 ->> 服务端: 校验参数合法性，通过则入库
+    服务端 ->> 前端: 文件上传请求，响应完成</pre><h5 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h5><blockquote><p>重命名相对比较容易实现，只要检查同目录下是否有相同名称的文件即可</p></blockquote><pre class="mermaid">graph LR
+    A[重命名] --> |token校验通过| B[参数校验]
+    B --> C[当前目录是否有同名文件存在]
+    C --> |YES| D[查库,自动在名称上面加序号]
+    C --> |NO| F[success]
+    D --> F
+    G[对单]</pre><h5 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h5><blockquote><p>由于数据库的字段设计，移动文件不用去递归查询子文件，子文件父 ID 未改动会自动跟随，只要改动顶层的文件夹即可</p></blockquote><pre class="mermaid">graph TB
+    A[移动] --> |token校验通过| B[参数校验]
+    B --> B2[查库校验,文件是否存在]
+    B2 --> |NO| E
+    B2 -->|YES| C[检查移动目标位置是否在已选择的文件夹下]
+    C --> |YES| E[Return Error]
+    C --> |NO| F[检查目标位置是否有相同的文件名]
+    F --> |YES| J[对重复的文件名自动加上序号]
+    F --> |NO| K[success]
+    J --> K
+    G[对多/单]</pre><h5 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h5><blockquote><p>在本项目，删除有软删除和硬删除，前者还可以在回收站恢复，后者直接在数据库删除，属于真删除</p></blockquote><blockquote><p>在删除文件后自动递归删除其下所有子文件的查询，是采用<a target="_blank" rel="noopener" href="https://www.sequelize.com.cn/other-topics/hooks">Sequelize Hooks</a> 完成的</p></blockquote><pre class="mermaid">graph TB
+    A[删除] --> |token校验通过| B[参数校验]
+    B --> B2[查库校验,文件是否存在]
+    B2 --> |NO| E
+    B2 --> |YES| D[params mode]
+    D --> |true| D2[硬删除]
+    D --> |false| D3[软删除]
+    D2 --> D5[更新用户空间信息]
+    D5 --> L
+    D3 --> L
+    L --> L2[触发删除HOOK]
+    L2 --> L3[检查删除的文件有没有文件夹类型]
+    L3 -->|YES|D
+    L3 -->|NO|L
+    G[对多/单]
+    E[Return Error]
+    L[success]</pre><h5 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h5><blockquote><p>在恢复文件后，恢复文件如果存储在一个已删除的目录下，那恢复的文件依旧找不到，这时得递归恢复其父目录，把原来的路径的文件夹也一并恢复</p></blockquote><blockquote><p>在恢复文件后，同样，自动递归其所有父文件，检查是否是删除状态，是则也跟着恢复，一直顶层文件夹或存在的时候停止，采用<a target="_blank" rel="noopener" href="https://www.sequelize.com.cn/other-topics/hooks">Sequelize Hooks</a> 完成的</p></blockquote><pre class="mermaid">graph TB
+    A[恢复] --> |token校验通过| B[参数校验]
+    B --> B2[查库校验,文件是否存在]
+    B2 --> |NO|E
+    B2 -->|YES| B3[检查目录是否有相同的文件名]
+    B3 --> |YES|B4[查库,重复文件名自动加上序号]
+    B3 --> |NO|L
+    B4 --> L
+    L --> L2[触发恢复HOOK]
+    L2 --> L3[检查恢复的文件有没有文件夹类型]
+    L3 -->|YES|B3
+    L3 -->|NO|L
+    G[对多/单]
+    E[Return Error]
+    L[success]</pre><h5 id="预览-获取文件数据"><a href="#预览-获取文件数据" class="headerlink" title="预览/获取文件数据"></a>预览/获取文件数据</h5><blockquote><p>在选择技术栈的时候，考虑带宽速度之类的体验问题，文件选择存储在阿里云的 OSS 上，其优点比较快，但是缺点是流量、费用比较贵 o(╥﹏╥)o，由于文件不是存储在服务端本地，这时需要去 OSS 获取一个临时的授权链接，来进行预览</p></blockquote><pre class="mermaid">graph TB
+    A[预览/获取文件数据] --> |token校验通过| B[参数校验]
+    B --> B2[查库校验,文件是否存在]
+    B2 --> |NO|E
+    B2 --> |YES| B3[检查OSS文件是否存在]
+    B3 --> |NO| E
+    B3 --> |YES| B4[是否有缓存]
+    B4 --> |NO| B6["文件类型是否属于可预览类型(图片,视频)"]
+    B4 --> |YES| B5[从缓存获取]
+    B5 --> L
+    B6 --> |YES| B7[请求OSS,返回一个处理过的缩略图]
+    B6 --> |NO| B8[请求OSS,返回原文件]
+    B7 --> C
+    B8 --> C
+    C --> L
+    E[Return Error]
+    C[缓存内容]
+    L[success,返回一个临时的签名链接,过期失效]</pre></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="https://www.jinghong.ml" rel="external nofollow noreferrer">Jing Hong</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://www.jinghong.ml/posts/ffc1.html">https://www.jinghong.ml/posts/ffc1.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="https://www.jinghong.ml" target="_blank">Jing Hong</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/uni-app/"><span class="chip bg-color">uni-app</span></a> <a href="/tags/egg/"><span class="chip bg-color">egg</span></a> <a href="/tags/vue/"><span class="chip bg-color">vue</span></a> <a href="/tags/native/"><span class="chip bg-color">native</span></a> <a href="/tags/weex/"><span class="chip bg-color">weex</span></a> <a href="/tags/nvue/"><span class="chip bg-color">nvue</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="qq,wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="/libs/valine/av-min.js"></script><script src="/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"UP9uMuPSfQaBCXoLN6VkCQ0I-MdYXbMMI",appKey:"DKpNWvpMdUjujjDhpOULhAsu",notify:!0,verify:!0,visitor:!0,avatar:"/medias/avatar.jpg",pageSize:"10",lang:"zh-cn",placeholder:"Welcome here!"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="far fa-dot-circle"></i> &nbsp;本篇</div><div class="card"><a href="/posts/ffc1.html"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="/medias/featureimages/6.jpg" class="responsive-img" alt="HCloud DEMO 总结"> <span class="card-title">HCloud DEMO 总结</span></div></a><div class="card-content article-content"><div class="summary block-with-text">毕业设计总结 HCloud 是一个全栈 JavaScript 开发的项目也是一个从零开始的项目，前端采用的是 uni-app 跨端框架，后端 EggJS，前端在 uni-app nvue (weex) 纯原生渲染技术的加持下，功能和流畅度方</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2021-05-24</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/demo/" class="post-category">demo</a></span></div></div><div class="card-action article-tags"><a href="/tags/uni-app/"><span class="chip bg-color">uni-app</span></a> <a href="/tags/egg/"><span class="chip bg-color">egg</span></a> <a href="/tags/vue/"><span class="chip bg-color">vue</span></a> <a href="/tags/native/"><span class="chip bg-color">native</span></a> <a href="/tags/weex/"><span class="chip bg-color">weex</span></a> <a href="/tags/nvue/"><span class="chip bg-color">nvue</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/e8e0.html"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/JingHong0202/jinghong0202.github.io@v0.1.0/loading.gif" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="Mysql"> <span class="card-title">Mysql</span></div></a><div class="card-content article-content"><div class="summary block-with-text">MYSQL 数据库数据库介绍=========== 数据库，就是能够存储和管理“大量数据”的一种软件系统的统称。 主流数据库 主流数据库包括：MS SQL Server， Oracle，DB2，Informix， Sybase 等。 他们</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-05-06</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/databases/" class="post-category">databases</a></span></div></div><div class="card-action article-tags"><a href="/tags/%E7%AC%94%E8%AE%B0/"><span class="chip bg-color">笔记</span></a> <a href="/tags/mysql/"><span class="chip bg-color">mysql</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: Jing Hong<br />文章作者: Jing Hong<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归作者所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/libs/codeBlock/codeBlockFuction.js"></script><script src="/libs/codeBlock/codeLang.js"></script><script src="/libs/codeBlock/codeCopy.js"></script><script src="/libs/codeBlock/codeShrink.js"></script><script src="https://unpkg.com/mermaid@8.10.2/dist/mermaid.min.js"></script><script>window.mermaid&&mermaid.initialize({theme:"forest"})</script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+      tocbot.init({
+          tocSelector: '#toc-content',
+          contentSelector: '#articleContent',
+          headingsOffset: -($(window).height() * 0.4 - 45),
+          collapseDepth: Number('0'),
+          headingSelector: 'h2, h3, h4, h5, h6'
+      });
+      // modify the toc link href to support Chinese.
+      let i = 0;
+      let tocHeading = 'toc-heading-';
+      $('#toc-content a').each(function () {
+          $(this).attr('href', '#' + tocHeading + (++i));
+      });
+      // modify the heading title id to support Chinese.
+      i = 0;
+      $('#articleContent').children('h2, h3, h4, h5, h6').each(function () {
+          $(this).attr('id', tocHeading + (++i));
+      });
+      // Set scroll toc fixed.
+      let tocHeight = parseInt($(window).height() * 0.4 - 64);
+      let $tocWidget = $('.toc-widget');
+      $(window).scroll(function () {
+          let scroll = $(window).scrollTop();
+          /* add post toc fixed. */
+          if (scroll > tocHeight) {
+              $tocWidget.addClass('toc-fixed');
+          } else {
+              $tocWidget.removeClass('toc-fixed');
+          }
+      });
+      
+      /* 修复文章卡片 div 的宽度. */
+      let fixPostCardWidth = function (srcId, targetId) {
+          let srcDiv = $('#' + srcId);
+          if (srcDiv.length === 0) {
+              return;
+          }
+          let w = srcDiv.width();
+          if (w >= 450) {
+              w = w + 21;
+          } else if (w >= 350 && w < 450) {
+              w = w + 18;
+          } else if (w >= 300 && w < 350) {
+              w = w + 16;
+          } else {
+              w = w + 14;
+          }
+          $('#' + targetId).width(w);
+      };
+
+      // 切换TOC目录展开收缩的相关操作.
+      const expandedClass = 'expanded';
+      let $tocAside = $('#toc-aside');
+      let $mainContent = $('#main-content');
+        //  default toc
+
+        
+            $tocAside.removeClass(expandedClass).hide();
+            $mainContent.removeClass('l9');
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        
+
+      $('#floating-toc-btn .btn-floating').click(function () {
+          if ($tocAside.hasClass(expandedClass)) {
+              $tocAside.removeClass(expandedClass).hide();
+              $mainContent.removeClass('l9');
+          } else {
+              $tocAside.addClass(expandedClass).show();
+              $mainContent.addClass('l9');
+          }
+          fixPostCardWidth('artDetail', 'prenext-posts');
+      });
+      
+  });</script></main><style>.tag-title{margin-bottom:10px;color:#3c4858;font-size:1.75rem;font-weight:700}.text-left{font-weight:500;text-align:left;margin-top:20px}.container-mindmap{max-width:100%!important}.top-title{display:none}@media screen and (max-width:600px){.mindmap{display:none}.top-title{display:block}}.mindmap-md{height:100vh!important}.km-view{font-family:STHeitiSC-Light,STHeiti,Hei,'Heiti SC','Microsoft Yahei',Arial,sans-serif;-webkit-user-select:none;user-select:none;position:relative}.km-view .km-receiver{position:absolute;left:-99999px;top:-99999px;width:20px;height:20px;outline:0;margin:0}.km-view image{cursor:zoom-in}.km-image-viewer{position:fixed;z-index:99999;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.75)}.km-image-viewer .km-image-viewer-container{position:absolute;top:0;bottom:0;left:0;right:0;text-align:center;white-space:nowrap;overflow:auto}.km-image-viewer .km-image-viewer-container::before{content:'';display:inline-block;height:100%;width:0;font-size:0;vertical-align:middle}.km-image-viewer .km-image-viewer-container img{cursor:zoom-out;vertical-align:middle}.km-image-viewer .km-image-viewer-container img.limited{cursor:zoom-in;max-width:100%;max-height:100%}.km-image-viewer .km-image-viewer-toolbar{z-index:1;background:rgba(0,0,0,.75);text-align:right;transition:all .25s}.km-image-viewer .km-image-viewer-toolbar.hidden{transform:translate(0,-100%);opacity:0}.km-image-viewer .km-image-viewer-btn{cursor:pointer;outline:0;border:0;width:44px;height:44px;background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjY0IiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMjY0IDg4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZT5kZWZhdWx0LXNraW4gMjwvdGl0bGU+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Zz48cGF0aCBkPSJNNjcuMDAyIDU5LjV2My43NjhjLTYuMzA3Ljg0LTkuMTg0IDUuNzUtMTAuMDAyIDkuNzMyIDIuMjItMi44MyA1LjU2NC01LjA5OCAxMC4wMDItNS4wOThWNzEuNUw3MyA2NS41ODUgNjcuMDAyIDU5LjV6IiBpZD0iU2hhcGUiIGZpbGw9IiNmZmYiLz48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTMgMjl2LTVoMnYzaDN2MmgtNXpNMTMgMTVoNXYyaC0zdjNoLTJ2LTV6TTMxIDE1djVoLTJ2LTNoLTN2LTJoNXpNMzEgMjloLTV2LTJoM3YtM2gydjV6IiBpZD0iU2hhcGUiLz48L2c+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTYyIDI0djVoLTJ2LTNoLTN2LTJoNXpNNjIgMjBoLTV2LTJoM3YtM2gydjV6TTcwIDIwdi01aDJ2M2gzdjJoLTV6TTcwIDI0aDV2MmgtM3YzaC0ydi01eiIvPjwvZz48cGF0aCBkPSJNMjAuNTg2IDY2bC01LjY1Ni01LjY1NiAxLjQxNC0xLjQxNEwyMiA2NC41ODZsNS42NTYtNS42NTYgMS40MTQgMS40MTRMMjMuNDE0IDY2bDUuNjU2IDUuNjU2LTEuNDE0IDEuNDE0TDIyIDY3LjQxNGwtNS42NTYgNS42NTYtMS40MTQtMS40MTRMMjAuNTg2IDY2eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMTEuNzg1IDY1LjAzTDExMCA2My41bDMtMy41aC0xMHYtMmgxMGwtMy0zLjUgMS43ODUtMS40NjhMMTE3IDU5bC01LjIxNSA2LjAzeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNTIuMjE1IDY1LjAzTDE1NCA2My41bC0zLTMuNWgxMHYtMmgtMTBsMy0zLjUtMS43ODUtMS40NjhMMTQ3IDU5bDUuMjE1IDYuMDN6IiBmaWxsPSIjZmZmIi8+PGc+PHBhdGggaWQ9IlJlY3RhbmdsZS0xMSIgZmlsbD0iI2ZmZiIgZD0iTTE2MC45NTcgMjguNTQzbC0zLjI1LTMuMjUtMS40MTMgMS40MTQgMy4yNSAzLjI1eiIvPjxwYXRoIGQ9Ik0xNTIuNSAyN2MzLjAzOCAwIDUuNS0yLjQ2MiA1LjUtNS41cy0yLjQ2Mi01LjUtNS41LTUuNS01LjUgMi40NjItNS41IDUuNSAyLjQ2MiA1LjUgNS41IDUuNXoiIGlkPSJPdmFsLTEiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTUwIDIxaDV2MWgtNXoiLz48L2c+PGc+PHBhdGggZD0iTTExNi45NTcgMjguNTQzbC0xLjQxNCAxLjQxNC0zLjI1LTMuMjUgMS40MTQtMS40MTQgMy4yNSAzLjI1eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMDguNSAyN2MzLjAzOCAwIDUuNS0yLjQ2MiA1LjUtNS41cy0yLjQ2Mi01LjUtNS41LTUuNS01LjUgMi40NjItNS41IDUuNSAyLjQ2MiA1LjUgNS41IDUuNXoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTA2IDIxaDV2MWgtNXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTA5LjA0MyAxOS4wMDhsLS4wODUgNS0xLS4wMTcuMDg1LTV6Ii8+PC9nPjwvZz48L2c+PC9zdmc+)}.km-image-viewer .km-image-viewer-toolbar{position:absolute;top:0;left:0;right:0}.km-image-viewer .km-image-viewer-close{background-position:0 -44px}.mindmap{width:inherit;border:1px solid #ccc}.mindmap-sm{height:300px}.mindmap-md{height:500px}.mindmap-lg{height:800px}</style><script src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script>$(document).ready(function () {
+    $('.mindmap').each(function () {
+      MM_FUNCS.drawMindMap(this)
+    })
+  })
+  let flag = false
+  $(document).keypress(function (event) {
+    if (event.keyCode === 32) {
+      event.preventDefault()
+      event.stopPropagation()
+      if (flag) return false
+      flag = true
+
+      $('.mindmap').each(function (i, e) {
+        e.mindmap.queryCommandState('Hand') ? '' : e.mindmap.execCommand('hand')
+      })
+    }
+    return false
+  })
+  $(document).keyup(function (event) {
+    if (event.keyCode === 32) {
+      flag = false
+      event.preventDefault()
+      event.stopPropagation()
+      $('.mindmap').each(function (i, e) {
+        e.mindmap.queryCommandState('Hand') ? e.mindmap.execCommand('hand') : ''
+      })
+    }
+    return false
+  })
+  var MM_FUNCS = {
+    li2jsonData: function (c) {
+      var a
+      var b = c.children('a:first')
+      let url = $(c).find('>img')[0]
+      if (url) {
+        url = url.getAttribute('data-original')
+      }
+      if (b.length !== 0) {
+        a = {
+          data: {
+            text: b.text(),
+            hyperlink: b.attr('href'),
+            image: url ? url : '',
+            imageSize: url ? { width: 270, height: 129 } : ''
+          }
+        }
+      } else {
+        a = {
+          data: {
+            text: c[0].childNodes[0].nodeValue.trim(),
+            image: url ? url : '',
+            imageSize: url ? { width: 270, height: 129 } : ''
+          }
+        }
+      }
+      c.find('> ul > li').each(function () {
+        if (!a.hasOwnProperty('children')) {
+          a.children = []
+        }
+        a.children.push(MM_FUNCS.li2jsonData($(this)))
+      })
+      return a
+    },
+    drawMindMap: function (a) {
+      var d = $(a).find('>ul:first'),
+        theme = $(a).find('>ul>li:eq(1)').html(),
+        template = $(a).find('>ul>li:eq(2)').html()
+      var c = {
+        root: {}
+      }
+      var b = new kityminder.Minder({
+        renderTo: a
+      })
+      a.mindmap = b
+      // b.on('mousewheel', function(event) {
+      //   evnet = event || window.event
+      //   console.log(event);
+      //   let {originEvent, minder} = event
+      // if (originEvent.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+      //     if (originEvent.wheelDelta > 0) { //当滑轮向上滚动时
+      //        minder.execCommand('ZoomIn')
+      //     }
+      //     if (originEvent.wheelDelta < 0) { //当滑轮向下滚动时
+      //          minder.execCommand('ZoomOut')
+      //     }
+      // } else if (originEvent.detail) {  //Firefox滑轮事件
+      //     if (originEvent.detail> 0) { //当滑轮向下滚动时
+      //        minder.execCommand('ZoomOut')
+      //     }
+      //     if (originEvent.detail< 0) { //当滑轮向上滚动时
+      //         minder.execCommand('ZoomIn')
+      //     }
+      // }
+      // return false
+      // })
+      a.viewport = 100
+      a.addEventListener('wheel', function (event) {
+        if (event.deltaY >= 0) {
+          a.viewport = a.viewport <= 0 ? 0 : (a.viewport -= 20)
+          this.mindmap.execCommand('Zoom', a.viewport)
+          this.mindmap.execCommand('camera', this.mindmap.getRoot(), 0)
+        } else {
+          a.viewport = a.viewport >= 200 ? 200 : (a.viewport += 20)
+          this.mindmap.execCommand('Zoom', a.viewport)
+          this.mindmap.execCommand('camera', this.mindmap.getRoot(), 0)
+        }
+        event.preventDefault()
+      })
+      c.root = MM_FUNCS.li2jsonData(d.children('li:first'))
+      b.importData('json', JSON.stringify(c))
+      $(d).remove()
+      setTimeout(() => {
+        theme ? b.execCommand('Theme', theme) : ''
+        template ? b.execCommand('Template', template) : ''
+      }, 1000)
+    }
+    // exportData('png')
+  }</script><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <a href="https://www.jinghong.ml" target="_blank">Jing Hong</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2020",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"2","26","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link"><a href="https://github.com/jinghong0202" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:979892455@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a> <a href="https://gitee.com/jinghong0919" class="tooltipped" target="_blank" data-tooltip="访问我的Gitee" data-position="top" data-delay="50">Gitee</a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=979892455" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 979892455" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a><a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="fas fa-rss"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><script>$(function(){searchFunc("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script>window.onload = () => {
+           var load = document.querySelector('.load-mask')
+           load.addEventListener('transitionend',() => {
+               load.style.display = 'none'   
+           })   
+           load.style.opacity = 0;
+        }</script><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script size="150" alpha="0.6" zindex="-1" src="/libs/background/ribbon.min.js" async></script><script src="/libs/instantpage/instantpage.js" type="module"></script><canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:1;pointer-events:none"></canvas><script src="https://cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script src="/js/fireworks.js" async></script><script src=""></script><script>var windowWidth=$(window).width();768<windowWidth&&document.write('<script type="text/javascript" src="/js/sakura.js" async="async" ><\/script>')</script><script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script><script>$('a').each(function() {
+          const $this = $(this);
+          const href = $this.attr('href');
+          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
+            const strs = href.split('/');
+            if (strs.length >= 3) {
+                const host = strs[2];
+                if (host !== 'www.jinghong.ml' || window.location.host) {
+                    $this.attr('href', '/go.html?url='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
+                    if (true) {
+                        $this.attr('target', '_blank');
+                    }
+                }
+            }
+          }
+        });</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)0<=(t=c[r].getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n()},e.src=i}();var t}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this)</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})})</script></body></html>
